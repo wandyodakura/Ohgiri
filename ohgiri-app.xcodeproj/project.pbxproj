@@ -12,9 +12,11 @@
 		8802CE1B1F9CC81400E3E538 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8802CE191F9CC81400E3E538 /* Main.storyboard */; };
 		8802CE1D1F9CC81400E3E538 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8802CE1C1F9CC81400E3E538 /* Assets.xcassets */; };
 		8802CE201F9CC81400E3E538 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8802CE1E1F9CC81400E3E538 /* LaunchScreen.storyboard */; };
+		F62BF5535EA2936EAD79079B /* Pods_ohgiri_app.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEF6FDF67DB9684939C9BE96 /* Pods_ohgiri_app.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5346A59EAB66A98853AE74BB /* Pods-ohgiri-app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ohgiri-app.release.xcconfig"; path = "Pods/Target Support Files/Pods-ohgiri-app/Pods-ohgiri-app.release.xcconfig"; sourceTree = "<group>"; };
 		8802CE121F9CC81400E3E538 /* ohgiri-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ohgiri-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8802CE151F9CC81400E3E538 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8802CE171F9CC81400E3E538 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +24,8 @@
 		8802CE1C1F9CC81400E3E538 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8802CE1F1F9CC81400E3E538 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8802CE211F9CC81400E3E538 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B2539332A6AA5BFF02B6A8A4 /* Pods-ohgiri-app.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ohgiri-app.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ohgiri-app/Pods-ohgiri-app.debug.xcconfig"; sourceTree = "<group>"; };
+		DEF6FDF67DB9684939C9BE96 /* Pods_ohgiri_app.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ohgiri_app.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F62BF5535EA2936EAD79079B /* Pods_ohgiri_app.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		237C90959A9134D9E6A20F7D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DEF6FDF67DB9684939C9BE96 /* Pods_ohgiri_app.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		8802CE091F9CC81400E3E538 = {
 			isa = PBXGroup;
 			children = (
 				8802CE141F9CC81400E3E538 /* ohgiri-app */,
 				8802CE131F9CC81400E3E538 /* Products */,
+				A92CE867C2A75D5A30AE37D7 /* Pods */,
+				237C90959A9134D9E6A20F7D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +79,15 @@
 			path = "ohgiri-app";
 			sourceTree = "<group>";
 		};
+		A92CE867C2A75D5A30AE37D7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B2539332A6AA5BFF02B6A8A4 /* Pods-ohgiri-app.debug.xcconfig */,
+				5346A59EAB66A98853AE74BB /* Pods-ohgiri-app.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8802CE241F9CC81400E3E538 /* Build configuration list for PBXNativeTarget "ohgiri-app" */;
 			buildPhases = (
+				BFA316812A9590DC77848732 /* [CP] Check Pods Manifest.lock */,
 				8802CE0E1F9CC81400E3E538 /* Sources */,
 				8802CE0F1F9CC81400E3E538 /* Frameworks */,
 				8802CE101F9CC81400E3E538 /* Resources */,
+				9CFA716A3F01F97980CDCA58 /* [CP] Embed Pods Frameworks */,
+				A28A65E6F08E84B7BD51DD75 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,6 +158,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9CFA716A3F01F97980CDCA58 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ohgiri-app/Pods-ohgiri-app-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A28A65E6F08E84B7BD51DD75 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ohgiri-app/Pods-ohgiri-app-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BFA316812A9590DC77848732 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8802CE0E1F9CC81400E3E538 /* Sources */ = {
@@ -259,6 +334,7 @@
 		};
 		8802CE251F9CC81400E3E538 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B2539332A6AA5BFF02B6A8A4 /* Pods-ohgiri-app.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = XXP6C6GGZ6;
@@ -272,6 +348,7 @@
 		};
 		8802CE261F9CC81400E3E538 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5346A59EAB66A98853AE74BB /* Pods-ohgiri-app.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = XXP6C6GGZ6;
