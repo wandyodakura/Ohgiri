@@ -6,8 +6,11 @@ target 'ohgiri-app' do
   use_frameworks!
 
   # Pods for ohgiri-app
+  pod 'ESTabBarController'
   pod 'Firebase', '4.1.0'
   pod 'Firebase/Core'
   pod 'Firebase/Auth'
   pod 'Firebase/Database' 
+  pod 'SVProgressHUD'
+
 end

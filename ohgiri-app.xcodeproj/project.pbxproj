@@ -12,6 +12,11 @@
 		8802CE1B1F9CC81400E3E538 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8802CE191F9CC81400E3E538 /* Main.storyboard */; };
 		8802CE1D1F9CC81400E3E538 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8802CE1C1F9CC81400E3E538 /* Assets.xcassets */; };
 		8802CE201F9CC81400E3E538 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8802CE1E1F9CC81400E3E538 /* LaunchScreen.storyboard */; };
+		882FE9121FA177EA000B00F6 /* ゴージャスな王冠の無料アイコン.png in Resources */ = {isa = PBXBuildFile; fileRef = 882FE9111FA177EA000B00F6 /* ゴージャスな王冠の無料アイコン.png */; };
+		882FE9141FA177F9000B00F6 /* 日本地図のアイコン.png in Resources */ = {isa = PBXBuildFile; fileRef = 882FE9131FA177F9000B00F6 /* 日本地図のアイコン.png */; };
+		882FE9161FA17814000B00F6 /* 家の無料アイコン.png in Resources */ = {isa = PBXBuildFile; fileRef = 882FE9151FA17814000B00F6 /* 家の無料アイコン.png */; };
+		882FE9181FA17822000B00F6 /* 人物アイコン　チーム.png in Resources */ = {isa = PBXBuildFile; fileRef = 882FE9171FA17822000B00F6 /* 人物アイコン　チーム.png */; };
+		88FAA65D1FA1B4AF00B8D117 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FAA65C1FA1B4AF00B8D117 /* RegisterViewController.swift */; };
 		F62BF5535EA2936EAD79079B /* Pods_ohgiri_app.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEF6FDF67DB9684939C9BE96 /* Pods_ohgiri_app.framework */; };
 /* End PBXBuildFile section */
 
@@ -24,6 +29,11 @@
 		8802CE1C1F9CC81400E3E538 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8802CE1F1F9CC81400E3E538 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8802CE211F9CC81400E3E538 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		882FE9111FA177EA000B00F6 /* ゴージャスな王冠の無料アイコン.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ゴージャスな王冠の無料アイコン.png"; sourceTree = "<group>"; };
+		882FE9131FA177F9000B00F6 /* 日本地図のアイコン.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "日本地図のアイコン.png"; sourceTree = "<group>"; };
+		882FE9151FA17814000B00F6 /* 家の無料アイコン.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "家の無料アイコン.png"; sourceTree = "<group>"; };
+		882FE9171FA17822000B00F6 /* 人物アイコン　チーム.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "人物アイコン　チーム.png"; sourceTree = "<group>"; };
+		88FAA65C1FA1B4AF00B8D117 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		B2539332A6AA5BFF02B6A8A4 /* Pods-ohgiri-app.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ohgiri-app.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ohgiri-app/Pods-ohgiri-app.debug.xcconfig"; sourceTree = "<group>"; };
 		DEF6FDF67DB9684939C9BE96 /* Pods_ohgiri_app.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ohgiri_app.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -73,6 +83,11 @@
 				8802CE171F9CC81400E3E538 /* ViewController.swift */,
 				8802CE191F9CC81400E3E538 /* Main.storyboard */,
 				8802CE1C1F9CC81400E3E538 /* Assets.xcassets */,
+				88FAA65C1FA1B4AF00B8D117 /* RegisterViewController.swift */,
+				882FE9171FA17822000B00F6 /* 人物アイコン　チーム.png */,
+				882FE9151FA17814000B00F6 /* 家の無料アイコン.png */,
+				882FE9131FA177F9000B00F6 /* 日本地図のアイコン.png */,
+				882FE9111FA177EA000B00F6 /* ゴージャスな王冠の無料アイコン.png */,
 				8802CE1E1F9CC81400E3E538 /* LaunchScreen.storyboard */,
 				8802CE211F9CC81400E3E538 /* Info.plist */,
 			);
@@ -152,8 +167,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				8802CE201F9CC81400E3E538 /* LaunchScreen.storyboard in Resources */,
+				882FE9121FA177EA000B00F6 /* ゴージャスな王冠の無料アイコン.png in Resources */,
 				8802CE1D1F9CC81400E3E538 /* Assets.xcassets in Resources */,
+				882FE9161FA17814000B00F6 /* 家の無料アイコン.png in Resources */,
 				8802CE1B1F9CC81400E3E538 /* Main.storyboard in Resources */,
+				882FE9141FA177F9000B00F6 /* 日本地図のアイコン.png in Resources */,
+				882FE9181FA17822000B00F6 /* 人物アイコン　チーム.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -214,7 +233,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -224,6 +243,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88FAA65D1FA1B4AF00B8D117 /* RegisterViewController.swift in Sources */,
 				8802CE181F9CC81400E3E538 /* ViewController.swift in Sources */,
 				8802CE161F9CC81400E3E538 /* AppDelegate.swift in Sources */,
 			);
@@ -391,6 +411,7 @@
 				8802CE261F9CC81400E3E538 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
