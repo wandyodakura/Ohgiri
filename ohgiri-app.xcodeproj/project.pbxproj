@@ -8,15 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		8802CE161F9CC81400E3E538 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8802CE151F9CC81400E3E538 /* AppDelegate.swift */; };
-		8802CE181F9CC81400E3E538 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8802CE171F9CC81400E3E538 /* ViewController.swift */; };
-		8802CE1B1F9CC81400E3E538 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8802CE191F9CC81400E3E538 /* Main.storyboard */; };
 		8802CE1D1F9CC81400E3E538 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8802CE1C1F9CC81400E3E538 /* Assets.xcassets */; };
-		8802CE201F9CC81400E3E538 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8802CE1E1F9CC81400E3E538 /* LaunchScreen.storyboard */; };
-		882FE9121FA177EA000B00F6 /* ゴージャスな王冠の無料アイコン.png in Resources */ = {isa = PBXBuildFile; fileRef = 882FE9111FA177EA000B00F6 /* ゴージャスな王冠の無料アイコン.png */; };
-		882FE9141FA177F9000B00F6 /* 日本地図のアイコン.png in Resources */ = {isa = PBXBuildFile; fileRef = 882FE9131FA177F9000B00F6 /* 日本地図のアイコン.png */; };
-		882FE9161FA17814000B00F6 /* 家の無料アイコン.png in Resources */ = {isa = PBXBuildFile; fileRef = 882FE9151FA17814000B00F6 /* 家の無料アイコン.png */; };
-		882FE9181FA17822000B00F6 /* 人物アイコン　チーム.png in Resources */ = {isa = PBXBuildFile; fileRef = 882FE9171FA17822000B00F6 /* 人物アイコン　チーム.png */; };
-		88FAA65D1FA1B4AF00B8D117 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FAA65C1FA1B4AF00B8D117 /* RegisterViewController.swift */; };
+		9A3853A91FA556B3004C48F7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A3853901FA556B3004C48F7 /* LaunchScreen.storyboard */; };
+		9A3853AA1FA556B3004C48F7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A3853921FA556B3004C48F7 /* Main.storyboard */; };
+		9A3853AB1FA556B3004C48F7 /* PostedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3853951FA556B3004C48F7 /* PostedTableViewCell.swift */; };
+		9A3853AC1FA556B3004C48F7 /* GroupTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A3853961FA556B3004C48F7 /* GroupTableViewCell.xib */; };
+		9A3853AD1FA556B3004C48F7 /* PostedTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A3853971FA556B3004C48F7 /* PostedTableViewCell.xib */; };
+		9A3853AE1FA556B3004C48F7 /* PurchaseTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A3853981FA556B3004C48F7 /* PurchaseTableViewCell.xib */; };
+		9A3853AF1FA556B3004C48F7 /* GroupTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3853991FA556B3004C48F7 /* GroupTableViewCell.swift */; };
+		9A3853B01FA556B3004C48F7 /* LikesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A38539A1FA556B3004C48F7 /* LikesTableViewCell.xib */; };
+		9A3853B11FA556B3004C48F7 /* AllTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A38539B1FA556B3004C48F7 /* AllTableViewCell.swift */; };
+		9A3853B21FA556B3004C48F7 /* LikesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A38539C1FA556B3004C48F7 /* LikesTableViewCell.swift */; };
+		9A3853B31FA556B3004C48F7 /* PurchaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A38539D1FA556B3004C48F7 /* PurchaseTableViewCell.swift */; };
+		9A3853B41FA556B3004C48F7 /* AllTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A38539E1FA556B3004C48F7 /* AllTableViewCell.xib */; };
+		9A3853B51FA556B3004C48F7 /* RankingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3853A01FA556B3004C48F7 /* RankingViewController.swift */; };
+		9A3853B61FA556B3004C48F7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3853A11FA556B3004C48F7 /* ViewController.swift */; };
+		9A3853B71FA556B3004C48F7 /* PostedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3853A21FA556B3004C48F7 /* PostedViewController.swift */; };
+		9A3853B81FA556B3004C48F7 /* PurchaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3853A31FA556B3004C48F7 /* PurchaseViewController.swift */; };
+		9A3853B91FA556B3004C48F7 /* LikesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3853A41FA556B3004C48F7 /* LikesViewController.swift */; };
+		9A3853BA1FA556B3004C48F7 /* GroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3853A51FA556B3004C48F7 /* GroupViewController.swift */; };
+		9A3853BB1FA556B3004C48F7 /* GroupPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3853A61FA556B3004C48F7 /* GroupPostViewController.swift */; };
+		9A3853BC1FA556B3004C48F7 /* AllViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3853A71FA556B3004C48F7 /* AllViewController.swift */; };
+		9A3853BD1FA556B3004C48F7 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3853A81FA556B3004C48F7 /* RegisterViewController.swift */; };
 		F62BF5535EA2936EAD79079B /* Pods_ohgiri_app.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEF6FDF67DB9684939C9BE96 /* Pods_ohgiri_app.framework */; };
 /* End PBXBuildFile section */
 
@@ -24,16 +37,29 @@
 		5346A59EAB66A98853AE74BB /* Pods-ohgiri-app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ohgiri-app.release.xcconfig"; path = "Pods/Target Support Files/Pods-ohgiri-app/Pods-ohgiri-app.release.xcconfig"; sourceTree = "<group>"; };
 		8802CE121F9CC81400E3E538 /* ohgiri-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ohgiri-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8802CE151F9CC81400E3E538 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8802CE171F9CC81400E3E538 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		8802CE1A1F9CC81400E3E538 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8802CE1C1F9CC81400E3E538 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		8802CE1F1F9CC81400E3E538 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8802CE211F9CC81400E3E538 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		882FE9111FA177EA000B00F6 /* ゴージャスな王冠の無料アイコン.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ゴージャスな王冠の無料アイコン.png"; sourceTree = "<group>"; };
-		882FE9131FA177F9000B00F6 /* 日本地図のアイコン.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "日本地図のアイコン.png"; sourceTree = "<group>"; };
-		882FE9151FA17814000B00F6 /* 家の無料アイコン.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "家の無料アイコン.png"; sourceTree = "<group>"; };
-		882FE9171FA17822000B00F6 /* 人物アイコン　チーム.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "人物アイコン　チーム.png"; sourceTree = "<group>"; };
-		88FAA65C1FA1B4AF00B8D117 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		9A3853911FA556B3004C48F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9A3853931FA556B3004C48F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9A3853951FA556B3004C48F7 /* PostedTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostedTableViewCell.swift; sourceTree = "<group>"; };
+		9A3853961FA556B3004C48F7 /* GroupTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GroupTableViewCell.xib; sourceTree = "<group>"; };
+		9A3853971FA556B3004C48F7 /* PostedTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PostedTableViewCell.xib; sourceTree = "<group>"; };
+		9A3853981FA556B3004C48F7 /* PurchaseTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PurchaseTableViewCell.xib; sourceTree = "<group>"; };
+		9A3853991FA556B3004C48F7 /* GroupTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupTableViewCell.swift; sourceTree = "<group>"; };
+		9A38539A1FA556B3004C48F7 /* LikesTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LikesTableViewCell.xib; sourceTree = "<group>"; };
+		9A38539B1FA556B3004C48F7 /* AllTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AllTableViewCell.swift; sourceTree = "<group>"; };
+		9A38539C1FA556B3004C48F7 /* LikesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LikesTableViewCell.swift; sourceTree = "<group>"; };
+		9A38539D1FA556B3004C48F7 /* PurchaseTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PurchaseTableViewCell.swift; sourceTree = "<group>"; };
+		9A38539E1FA556B3004C48F7 /* AllTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AllTableViewCell.xib; sourceTree = "<group>"; };
+		9A3853A01FA556B3004C48F7 /* RankingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RankingViewController.swift; sourceTree = "<group>"; };
+		9A3853A11FA556B3004C48F7 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9A3853A21FA556B3004C48F7 /* PostedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostedViewController.swift; sourceTree = "<group>"; };
+		9A3853A31FA556B3004C48F7 /* PurchaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PurchaseViewController.swift; sourceTree = "<group>"; };
+		9A3853A41FA556B3004C48F7 /* LikesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LikesViewController.swift; sourceTree = "<group>"; };
+		9A3853A51FA556B3004C48F7 /* GroupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupViewController.swift; sourceTree = "<group>"; };
+		9A3853A61FA556B3004C48F7 /* GroupPostViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupPostViewController.swift; sourceTree = "<group>"; };
+		9A3853A71FA556B3004C48F7 /* AllViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AllViewController.swift; sourceTree = "<group>"; };
+		9A3853A81FA556B3004C48F7 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		B2539332A6AA5BFF02B6A8A4 /* Pods-ohgiri-app.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ohgiri-app.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ohgiri-app/Pods-ohgiri-app.debug.xcconfig"; sourceTree = "<group>"; };
 		DEF6FDF67DB9684939C9BE96 /* Pods_ohgiri_app.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ohgiri_app.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -79,19 +105,64 @@
 		8802CE141F9CC81400E3E538 /* ohgiri-app */ = {
 			isa = PBXGroup;
 			children = (
+				9A38538E1FA556B3004C48F7 /* Model */,
+				9A38538F1FA556B3004C48F7 /* Storyboard */,
+				9A3853941FA556B3004C48F7 /* View */,
+				9A38539F1FA556B3004C48F7 /* ViewController */,
 				8802CE151F9CC81400E3E538 /* AppDelegate.swift */,
-				8802CE171F9CC81400E3E538 /* ViewController.swift */,
-				8802CE191F9CC81400E3E538 /* Main.storyboard */,
 				8802CE1C1F9CC81400E3E538 /* Assets.xcassets */,
-				88FAA65C1FA1B4AF00B8D117 /* RegisterViewController.swift */,
-				882FE9171FA17822000B00F6 /* 人物アイコン　チーム.png */,
-				882FE9151FA17814000B00F6 /* 家の無料アイコン.png */,
-				882FE9131FA177F9000B00F6 /* 日本地図のアイコン.png */,
-				882FE9111FA177EA000B00F6 /* ゴージャスな王冠の無料アイコン.png */,
-				8802CE1E1F9CC81400E3E538 /* LaunchScreen.storyboard */,
 				8802CE211F9CC81400E3E538 /* Info.plist */,
 			);
 			path = "ohgiri-app";
+			sourceTree = "<group>";
+		};
+		9A38538E1FA556B3004C48F7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9A38538F1FA556B3004C48F7 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				9A3853901FA556B3004C48F7 /* LaunchScreen.storyboard */,
+				9A3853921FA556B3004C48F7 /* Main.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		9A3853941FA556B3004C48F7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9A3853951FA556B3004C48F7 /* PostedTableViewCell.swift */,
+				9A3853961FA556B3004C48F7 /* GroupTableViewCell.xib */,
+				9A3853971FA556B3004C48F7 /* PostedTableViewCell.xib */,
+				9A3853981FA556B3004C48F7 /* PurchaseTableViewCell.xib */,
+				9A3853991FA556B3004C48F7 /* GroupTableViewCell.swift */,
+				9A38539A1FA556B3004C48F7 /* LikesTableViewCell.xib */,
+				9A38539B1FA556B3004C48F7 /* AllTableViewCell.swift */,
+				9A38539C1FA556B3004C48F7 /* LikesTableViewCell.swift */,
+				9A38539D1FA556B3004C48F7 /* PurchaseTableViewCell.swift */,
+				9A38539E1FA556B3004C48F7 /* AllTableViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9A38539F1FA556B3004C48F7 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				9A3853A01FA556B3004C48F7 /* RankingViewController.swift */,
+				9A3853A11FA556B3004C48F7 /* ViewController.swift */,
+				9A3853A21FA556B3004C48F7 /* PostedViewController.swift */,
+				9A3853A31FA556B3004C48F7 /* PurchaseViewController.swift */,
+				9A3853A41FA556B3004C48F7 /* LikesViewController.swift */,
+				9A3853A51FA556B3004C48F7 /* GroupViewController.swift */,
+				9A3853A61FA556B3004C48F7 /* GroupPostViewController.swift */,
+				9A3853A71FA556B3004C48F7 /* AllViewController.swift */,
+				9A3853A81FA556B3004C48F7 /* RegisterViewController.swift */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 		A92CE867C2A75D5A30AE37D7 /* Pods */ = {
@@ -166,13 +237,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8802CE201F9CC81400E3E538 /* LaunchScreen.storyboard in Resources */,
-				882FE9121FA177EA000B00F6 /* ゴージャスな王冠の無料アイコン.png in Resources */,
+				9A3853B01FA556B3004C48F7 /* LikesTableViewCell.xib in Resources */,
+				9A3853B41FA556B3004C48F7 /* AllTableViewCell.xib in Resources */,
+				9A3853AA1FA556B3004C48F7 /* Main.storyboard in Resources */,
 				8802CE1D1F9CC81400E3E538 /* Assets.xcassets in Resources */,
-				882FE9161FA17814000B00F6 /* 家の無料アイコン.png in Resources */,
-				8802CE1B1F9CC81400E3E538 /* Main.storyboard in Resources */,
-				882FE9141FA177F9000B00F6 /* 日本地図のアイコン.png in Resources */,
-				882FE9181FA17822000B00F6 /* 人物アイコン　チーム.png in Resources */,
+				9A3853AE1FA556B3004C48F7 /* PurchaseTableViewCell.xib in Resources */,
+				9A3853A91FA556B3004C48F7 /* LaunchScreen.storyboard in Resources */,
+				9A3853AD1FA556B3004C48F7 /* PostedTableViewCell.xib in Resources */,
+				9A3853AC1FA556B3004C48F7 /* GroupTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -186,15 +258,19 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-ohgiri-app/Pods-ohgiri-app-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ESTabBarController/ESTabBarController.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ESTabBarController.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
@@ -233,7 +309,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -243,8 +319,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				88FAA65D1FA1B4AF00B8D117 /* RegisterViewController.swift in Sources */,
-				8802CE181F9CC81400E3E538 /* ViewController.swift in Sources */,
+				9A3853BB1FA556B3004C48F7 /* GroupPostViewController.swift in Sources */,
+				9A3853BA1FA556B3004C48F7 /* GroupViewController.swift in Sources */,
+				9A3853BC1FA556B3004C48F7 /* AllViewController.swift in Sources */,
+				9A3853B91FA556B3004C48F7 /* LikesViewController.swift in Sources */,
+				9A3853B71FA556B3004C48F7 /* PostedViewController.swift in Sources */,
+				9A3853AF1FA556B3004C48F7 /* GroupTableViewCell.swift in Sources */,
+				9A3853BD1FA556B3004C48F7 /* RegisterViewController.swift in Sources */,
+				9A3853B11FA556B3004C48F7 /* AllTableViewCell.swift in Sources */,
+				9A3853B21FA556B3004C48F7 /* LikesTableViewCell.swift in Sources */,
+				9A3853B51FA556B3004C48F7 /* RankingViewController.swift in Sources */,
+				9A3853B81FA556B3004C48F7 /* PurchaseViewController.swift in Sources */,
+				9A3853AB1FA556B3004C48F7 /* PostedTableViewCell.swift in Sources */,
+				9A3853B31FA556B3004C48F7 /* PurchaseTableViewCell.swift in Sources */,
+				9A3853B61FA556B3004C48F7 /* ViewController.swift in Sources */,
 				8802CE161F9CC81400E3E538 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -252,20 +340,20 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		8802CE191F9CC81400E3E538 /* Main.storyboard */ = {
+		9A3853901FA556B3004C48F7 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				8802CE1A1F9CC81400E3E538 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		8802CE1E1F9CC81400E3E538 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8802CE1F1F9CC81400E3E538 /* Base */,
+				9A3853911FA556B3004C48F7 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		9A3853921FA556B3004C48F7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9A3853931FA556B3004C48F7 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
