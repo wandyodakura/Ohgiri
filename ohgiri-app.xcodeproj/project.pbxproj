@@ -136,14 +136,14 @@
 			isa = PBXGroup;
 			children = (
 				9A3853951FA556B3004C48F7 /* PostedTableViewCell.swift */,
-				9A3853961FA556B3004C48F7 /* GroupTableViewCell.xib */,
 				9A3853971FA556B3004C48F7 /* PostedTableViewCell.xib */,
-				9A3853981FA556B3004C48F7 /* PurchaseTableViewCell.xib */,
 				9A3853991FA556B3004C48F7 /* GroupTableViewCell.swift */,
-				9A38539A1FA556B3004C48F7 /* LikesTableViewCell.xib */,
-				9A38539B1FA556B3004C48F7 /* AllTableViewCell.swift */,
+				9A3853961FA556B3004C48F7 /* GroupTableViewCell.xib */,
 				9A38539C1FA556B3004C48F7 /* LikesTableViewCell.swift */,
+				9A38539A1FA556B3004C48F7 /* LikesTableViewCell.xib */,
 				9A38539D1FA556B3004C48F7 /* PurchaseTableViewCell.swift */,
+				9A3853981FA556B3004C48F7 /* PurchaseTableViewCell.xib */,
+				9A38539B1FA556B3004C48F7 /* AllTableViewCell.swift */,
 				9A38539E1FA556B3004C48F7 /* AllTableViewCell.xib */,
 			);
 			path = View;
