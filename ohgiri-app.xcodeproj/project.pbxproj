@@ -16,6 +16,8 @@
 		882FE9141FA177F9000B00F6 /* 日本地図のアイコン.png in Resources */ = {isa = PBXBuildFile; fileRef = 882FE9131FA177F9000B00F6 /* 日本地図のアイコン.png */; };
 		882FE9161FA17814000B00F6 /* 家の無料アイコン.png in Resources */ = {isa = PBXBuildFile; fileRef = 882FE9151FA17814000B00F6 /* 家の無料アイコン.png */; };
 		882FE9181FA17822000B00F6 /* 人物アイコン　チーム.png in Resources */ = {isa = PBXBuildFile; fileRef = 882FE9171FA17822000B00F6 /* 人物アイコン　チーム.png */; };
+		88DA3C181FA2F022002BCA26 /* RankingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DA3C161FA2F022002BCA26 /* RankingTableViewCell.swift */; };
+		88DA3C191FA2F022002BCA26 /* RankingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88DA3C171FA2F022002BCA26 /* RankingTableViewCell.xib */; };
 		88FAA65D1FA1B4AF00B8D117 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FAA65C1FA1B4AF00B8D117 /* RegisterViewController.swift */; };
 		F62BF5535EA2936EAD79079B /* Pods_ohgiri_app.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEF6FDF67DB9684939C9BE96 /* Pods_ohgiri_app.framework */; };
 /* End PBXBuildFile section */
@@ -33,6 +35,8 @@
 		882FE9131FA177F9000B00F6 /* 日本地図のアイコン.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "日本地図のアイコン.png"; sourceTree = "<group>"; };
 		882FE9151FA17814000B00F6 /* 家の無料アイコン.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "家の無料アイコン.png"; sourceTree = "<group>"; };
 		882FE9171FA17822000B00F6 /* 人物アイコン　チーム.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "人物アイコン　チーム.png"; sourceTree = "<group>"; };
+		88DA3C161FA2F022002BCA26 /* RankingTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RankingTableViewCell.swift; sourceTree = "<group>"; };
+		88DA3C171FA2F022002BCA26 /* RankingTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RankingTableViewCell.xib; sourceTree = "<group>"; };
 		88FAA65C1FA1B4AF00B8D117 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		B2539332A6AA5BFF02B6A8A4 /* Pods-ohgiri-app.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ohgiri-app.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ohgiri-app/Pods-ohgiri-app.debug.xcconfig"; sourceTree = "<group>"; };
 		DEF6FDF67DB9684939C9BE96 /* Pods_ohgiri_app.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ohgiri_app.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -82,6 +86,8 @@
 				8802CE151F9CC81400E3E538 /* AppDelegate.swift */,
 				8802CE171F9CC81400E3E538 /* ViewController.swift */,
 				8802CE191F9CC81400E3E538 /* Main.storyboard */,
+				88DA3C161FA2F022002BCA26 /* RankingTableViewCell.swift */,
+				88DA3C171FA2F022002BCA26 /* RankingTableViewCell.xib */,
 				8802CE1C1F9CC81400E3E538 /* Assets.xcassets */,
 				88FAA65C1FA1B4AF00B8D117 /* RegisterViewController.swift */,
 				882FE9171FA17822000B00F6 /* 人物アイコン　チーム.png */,
@@ -172,6 +178,7 @@
 				882FE9161FA17814000B00F6 /* 家の無料アイコン.png in Resources */,
 				8802CE1B1F9CC81400E3E538 /* Main.storyboard in Resources */,
 				882FE9141FA177F9000B00F6 /* 日本地図のアイコン.png in Resources */,
+				88DA3C191FA2F022002BCA26 /* RankingTableViewCell.xib in Resources */,
 				882FE9181FA17822000B00F6 /* 人物アイコン　チーム.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -245,6 +252,7 @@
 			files = (
 				88FAA65D1FA1B4AF00B8D117 /* RegisterViewController.swift in Sources */,
 				8802CE181F9CC81400E3E538 /* ViewController.swift in Sources */,
+				88DA3C181FA2F022002BCA26 /* RankingTableViewCell.swift in Sources */,
 				8802CE161F9CC81400E3E538 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

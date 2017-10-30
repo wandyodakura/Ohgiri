@@ -1,18 +1,15 @@
 //
-//  RegisterViewController.swift
-//  ohgiri-app
+//  HomeViewController.swift
+//  
 //
-//  Created by 小田倉真弘 on 2017/10/26.
-//  Copyright © 2017年 masahiro.odakura. All rights reserved.
+//  Created by 小田倉真弘 on 2017/10/28.
+//
 //
 
 import UIKit
 
-class RegisterViewController: UIViewController {
- 
-    @IBOutlet weak var nameTextField: UITextField!
-    @IBOutlet weak var mailTextField: UITextField!
-    @IBOutlet weak var passwordTextField: UITextField!
+class HomeViewController: UIViewController {
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -23,12 +20,9 @@ class RegisterViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    @IBAction func registerButton(_ sender: Any){
-        
-         self.dismiss(animated: true, completion: nil)
     
-    }
 
+    @IBAction func unwind(_ segue: UIStoryboardSegue) { }
     /*
     // MARK: - Navigation
 

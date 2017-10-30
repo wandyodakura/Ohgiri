@@ -1,19 +1,16 @@
 //
-//  GroupTableViewCell.swift
-//  
+//  RankingTableViewCell.swift
+//  ohgiri-app
 //
 //  Created by 小田倉真弘 on 2017/10/27.
-//
+//  Copyright © 2017年 masahiro.odakura. All rights reserved.
 //
 
 import UIKit
 
-class GroupTableViewCell: UITableViewCell {
+class RankingTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var odaiImageView: UIImageView!
-     @IBOutlet weak var numberLabel: UILabel!
     @IBOutlet weak var nameLabel: UILabel!
-    @IBOutlet weak var bokeLabel: UILabel!
     @IBOutlet weak var votesLabel: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()

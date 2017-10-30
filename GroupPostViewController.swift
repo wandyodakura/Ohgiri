@@ -10,6 +10,8 @@ import UIKit
 
 class GroupPostViewController: UIViewController {
 
+    @IBOutlet weak var odaiImageView: UIImageView!
+    @IBOutlet weak var bokeTextView: UITextView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -19,6 +21,10 @@ class GroupPostViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    @IBAction func postButton(_ sender: Any){
+    
+         self.dismiss(animated: true, completion: nil)
     }
     
 

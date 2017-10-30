@@ -12,8 +12,8 @@ class LikesViewController: UIViewController, UITableViewDelegate, UITableViewDat
  @IBOutlet weak var likesTableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        tableview.delegate=self
-        tableview.dataSource=self
+        tableView.delegate=self
+        tableView.dataSource=self
         // Do any additional setup after loading the view.
         
     }

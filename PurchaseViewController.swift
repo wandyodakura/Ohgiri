@@ -8,8 +8,10 @@
 
 import UIKit
 
-class PurchaseViewController: UIViewController, UITableViewDelegate, UITableViewDataSource{
- @IBOutlet weak var purchaseTableView: UITableView!
+class PurchaseViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+ 
+    @IBOutlet weak var purchaseTableView: UITableView!
+   
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.delegate=self

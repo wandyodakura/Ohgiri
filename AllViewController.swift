@@ -8,10 +8,14 @@
 
 import UIKit
 
-class AllViewController: UIViewController {
+class AllViewController: UIViewController, UITableViewDelegate, UITableViewDatasource {
+
+    @IBOutlet weak var allTableView: UITableView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableView.delegate=self
+        tableView.dataSource=self
 
         // Do any additional setup after loading the view.
     }

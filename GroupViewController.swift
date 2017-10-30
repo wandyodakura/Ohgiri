@@ -8,11 +8,15 @@
 
 import UIKit
 
-class GroupViewController: UIViewController {
+class GroupViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+
+    @IBOutlet weak var groupTableView: UITableView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        tableView.delegate=self
+        tableView.dataSource=self
         // Do any additional setup after loading the view.
     }
 
@@ -20,6 +24,11 @@ class GroupViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    @IBAction func postButton(_ sender: Any){
+        
+    }
+    
+
     
 
     /*
