@@ -1,23 +1,18 @@
 //
-//  PurchaseViewController.swift
+//  HomeViewController.swift
 //  
 //
-//  Created by 小田倉真弘 on 2017/10/26.
+//  Created by 小田倉真弘 on 2017/10/28.
 //
 //
 
 import UIKit
 
-class PurchaseViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
- 
-    @IBOutlet weak var purchaseTableView: UITableView!
-   
+class HomeViewController: UIViewController {
+
+    @IBOutlet weak var myImageView: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        tableView.delegate=self
-        tableView.dataSource=self
-        
-        tableView.allowsSelection = false
 
         // Do any additional setup after loading the view.
     }
@@ -28,6 +23,7 @@ class PurchaseViewController: UIViewController, UITableViewDelegate, UITableView
     }
     
 
+    @IBAction func unwind(_ segue: UIStoryboardSegue) { }
     /*
     // MARK: - Navigation
 
