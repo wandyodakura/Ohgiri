@@ -14,13 +14,17 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        // 設定メソッドを呼べば、OK
+        setupTab()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    /// EsTab設定
     func setupTab() {
         
         // 画像のファイル名を指定してESTabBarControllerを作成する
@@ -48,8 +52,5 @@ class ViewController: UIViewController {
         tabBarController.setView(rankingViewController, at: 3)
         
     }
-    
-
-
 }
 

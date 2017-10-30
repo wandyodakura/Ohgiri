@@ -14,7 +14,7 @@
             <rect key="frame" x="0.0" y="0.0" width="410" height="264"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="410" height="263.5"/>
+                <rect key="frame" x="0.0" y="0.0" width="410" height="264"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ulz-6s-CLg">
@@ -56,6 +56,13 @@
                     </button>
                 </subviews>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="bokeLabel" destination="dRY-EC-PxW" id="TlC-1g-3gu"/>
+                <outlet property="nameLabel" destination="tlI-oI-sVl" id="6Te-rK-lLx"/>
+                <outlet property="numberLabel" destination="WuE-Lf-jwE" id="xl8-rL-hs8"/>
+                <outlet property="odaiImageView" destination="ulz-6s-CLg" id="a3P-24-d4l"/>
+                <outlet property="votesLabel" destination="uHO-pz-8M5" id="NsF-yK-HdV"/>
+            </connections>
             <point key="canvasLocation" x="80" y="47"/>
         </tableViewCell>
     </objects>

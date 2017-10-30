@@ -10,8 +10,12 @@ import UIKit
 
 class AllViewController: UIViewController {
 
+    @IBOutlet weak var allTableView: UITableView!
+
     override func viewDidLoad() {
         super.viewDidLoad()
+        allTableView.delegate=self
+        allTableView.dataSource=self
 
         // Do any additional setup after loading the view.
     }
@@ -32,4 +36,39 @@ class AllViewController: UIViewController {
     }
     */
 
+}
+
+/**
+ こういう風にdelegateなどはextension(拡張) で書き方分けたほうがわかりやすいですよ
+ */
+
+// MARK: - UITableViewDataSource
+extension AllViewController: UITableViewDataSource {
+    
+    /// セルの数
+    ///
+    /// - Parameters:
+    ///   - tableView: UITableView
+    ///   - section: Int
+    /// - Returns: セル数
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        // TODO: 後ほどしっかり組む
+        return 0
+    }
+    
+    /// セルの設定
+    ///
+    /// - Parameters:
+    ///   - tableView: UITableView
+    ///   - indexPath: IndexPath
+    /// - Returns: セル
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        // TODO: 後ほどしっかり組む
+        return UITableViewCell()
+    }
+}
+
+// MARK: - UITableViewDelegate
+extension AllViewController: UITableViewDelegate {
+    
 }

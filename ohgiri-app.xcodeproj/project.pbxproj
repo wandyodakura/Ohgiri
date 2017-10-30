@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3096C8B01FA6CEC400600134 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3096C8AE1FA6CEC400600134 /* File.swift */; };
+		3096C8B11FA6CEC400600134 /* PostData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3096C8AF1FA6CEC400600134 /* PostData.swift */; };
+		3096C8B41FA6CED000600134 /* RankingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3096C8B21FA6CED000600134 /* RankingTableViewCell.swift */; };
+		3096C8B51FA6CED000600134 /* RankingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3096C8B31FA6CED000600134 /* RankingTableViewCell.xib */; };
+		3096C8B71FA6CED800600134 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3096C8B61FA6CED800600134 /* HomeViewController.swift */; };
 		8802CE161F9CC81400E3E538 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8802CE151F9CC81400E3E538 /* AppDelegate.swift */; };
 		8802CE1D1F9CC81400E3E538 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8802CE1C1F9CC81400E3E538 /* Assets.xcassets */; };
 		9A3853A91FA556B3004C48F7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A3853901FA556B3004C48F7 /* LaunchScreen.storyboard */; };
@@ -34,6 +39,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3096C8AE1FA6CEC400600134 /* File.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		3096C8AF1FA6CEC400600134 /* PostData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostData.swift; sourceTree = "<group>"; };
+		3096C8B21FA6CED000600134 /* RankingTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RankingTableViewCell.swift; sourceTree = "<group>"; };
+		3096C8B31FA6CED000600134 /* RankingTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RankingTableViewCell.xib; sourceTree = "<group>"; };
+		3096C8B61FA6CED800600134 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		5346A59EAB66A98853AE74BB /* Pods-ohgiri-app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ohgiri-app.release.xcconfig"; path = "Pods/Target Support Files/Pods-ohgiri-app/Pods-ohgiri-app.release.xcconfig"; sourceTree = "<group>"; };
 		8802CE121F9CC81400E3E538 /* ohgiri-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ohgiri-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8802CE151F9CC81400E3E538 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -119,6 +129,8 @@
 		9A38538E1FA556B3004C48F7 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				3096C8AE1FA6CEC400600134 /* File.swift */,
+				3096C8AF1FA6CEC400600134 /* PostData.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -135,6 +147,8 @@
 		9A3853941FA556B3004C48F7 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				3096C8B21FA6CED000600134 /* RankingTableViewCell.swift */,
+				3096C8B31FA6CED000600134 /* RankingTableViewCell.xib */,
 				9A3853951FA556B3004C48F7 /* PostedTableViewCell.swift */,
 				9A3853971FA556B3004C48F7 /* PostedTableViewCell.xib */,
 				9A3853991FA556B3004C48F7 /* GroupTableViewCell.swift */,
@@ -152,6 +166,7 @@
 		9A38539F1FA556B3004C48F7 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				3096C8B61FA6CED800600134 /* HomeViewController.swift */,
 				9A3853A01FA556B3004C48F7 /* RankingViewController.swift */,
 				9A3853A11FA556B3004C48F7 /* ViewController.swift */,
 				9A3853A21FA556B3004C48F7 /* PostedViewController.swift */,
@@ -244,6 +259,7 @@
 				9A3853AE1FA556B3004C48F7 /* PurchaseTableViewCell.xib in Resources */,
 				9A3853A91FA556B3004C48F7 /* LaunchScreen.storyboard in Resources */,
 				9A3853AD1FA556B3004C48F7 /* PostedTableViewCell.xib in Resources */,
+				3096C8B51FA6CED000600134 /* RankingTableViewCell.xib in Resources */,
 				9A3853AC1FA556B3004C48F7 /* GroupTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -321,13 +337,17 @@
 			files = (
 				9A3853BB1FA556B3004C48F7 /* GroupPostViewController.swift in Sources */,
 				9A3853BA1FA556B3004C48F7 /* GroupViewController.swift in Sources */,
+				3096C8B71FA6CED800600134 /* HomeViewController.swift in Sources */,
+				3096C8B41FA6CED000600134 /* RankingTableViewCell.swift in Sources */,
 				9A3853BC1FA556B3004C48F7 /* AllViewController.swift in Sources */,
 				9A3853B91FA556B3004C48F7 /* LikesViewController.swift in Sources */,
 				9A3853B71FA556B3004C48F7 /* PostedViewController.swift in Sources */,
+				3096C8B01FA6CEC400600134 /* File.swift in Sources */,
 				9A3853AF1FA556B3004C48F7 /* GroupTableViewCell.swift in Sources */,
 				9A3853BD1FA556B3004C48F7 /* RegisterViewController.swift in Sources */,
 				9A3853B11FA556B3004C48F7 /* AllTableViewCell.swift in Sources */,
 				9A3853B21FA556B3004C48F7 /* LikesTableViewCell.swift in Sources */,
+				3096C8B11FA6CEC400600134 /* PostData.swift in Sources */,
 				9A3853B51FA556B3004C48F7 /* RankingViewController.swift in Sources */,
 				9A3853B81FA556B3004C48F7 /* PurchaseViewController.swift in Sources */,
 				9A3853AB1FA556B3004C48F7 /* PostedTableViewCell.swift in Sources */,

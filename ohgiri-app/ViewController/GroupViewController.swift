@@ -10,9 +10,13 @@ import UIKit
 
 class GroupViewController: UIViewController {
 
+    @IBOutlet weak var groupTableView: UITableView!
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        groupTableView.delegate=self
+        groupTableView.dataSource=self
         // Do any additional setup after loading the view.
     }
 
@@ -20,6 +24,11 @@ class GroupViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    @IBAction func postButton(_ sender: Any){
+        
+    }
+    
+
     
 
     /*
@@ -33,3 +42,39 @@ class GroupViewController: UIViewController {
     */
 
 }
+
+/**
+ こういう風にdelegateなどはextension(拡張) で書き方分けたほうがわかりやすいですよ
+ */
+
+// MARK: - UITableViewDataSource
+extension GroupViewController: UITableViewDataSource {
+    
+    /// セルの数
+    ///
+    /// - Parameters:
+    ///   - tableView: UITableView
+    ///   - section: Int
+    /// - Returns: セル数
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        // TODO: 後ほどしっかり組む
+        return 0
+    }
+    
+    /// セルの設定
+    ///
+    /// - Parameters:
+    ///   - tableView: UITableView
+    ///   - indexPath: IndexPath
+    /// - Returns: セル
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        // TODO: 後ほどしっかり組む
+        return UITableViewCell()
+    }
+}
+
+// MARK: - UITableViewDelegate
+extension GroupViewController: UITableViewDelegate {
+    
+}
+

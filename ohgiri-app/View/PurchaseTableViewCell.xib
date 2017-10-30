@@ -35,6 +35,9 @@
                     </button>
                 </subviews>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="odaiImageView" destination="q3x-aO-fuf" id="XbA-C0-K9P"/>
+            </connections>
             <point key="canvasLocation" x="34" y="141.5"/>
         </tableViewCell>
     </objects>
