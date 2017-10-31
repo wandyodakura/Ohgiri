@@ -14,6 +14,7 @@
 		3096C8B71FA6CED800600134 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3096C8B61FA6CED800600134 /* HomeViewController.swift */; };
 		8802CE161F9CC81400E3E538 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8802CE151F9CC81400E3E538 /* AppDelegate.swift */; };
 		8802CE1D1F9CC81400E3E538 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8802CE1C1F9CC81400E3E538 /* Assets.xcassets */; };
+		884DE9B21FA84A4500C2206C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 884DE9B11FA84A4500C2206C /* GoogleService-Info.plist */; };
 		9A3853A91FA556B3004C48F7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A3853901FA556B3004C48F7 /* LaunchScreen.storyboard */; };
 		9A3853AA1FA556B3004C48F7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A3853921FA556B3004C48F7 /* Main.storyboard */; };
 		9A3853AB1FA556B3004C48F7 /* PostedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3853951FA556B3004C48F7 /* PostedTableViewCell.swift */; };
@@ -49,6 +50,7 @@
 		8802CE151F9CC81400E3E538 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8802CE1C1F9CC81400E3E538 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8802CE211F9CC81400E3E538 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		884DE9B11FA84A4500C2206C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		9A3853911FA556B3004C48F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9A3853931FA556B3004C48F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9A3853951FA556B3004C48F7 /* PostedTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostedTableViewCell.swift; sourceTree = "<group>"; };
@@ -122,6 +124,7 @@
 				8802CE151F9CC81400E3E538 /* AppDelegate.swift */,
 				8802CE1C1F9CC81400E3E538 /* Assets.xcassets */,
 				8802CE211F9CC81400E3E538 /* Info.plist */,
+				884DE9B11FA84A4500C2206C /* GoogleService-Info.plist */,
 			);
 			path = "ohgiri-app";
 			sourceTree = "<group>";
@@ -259,6 +262,7 @@
 				9A3853AE1FA556B3004C48F7 /* PurchaseTableViewCell.xib in Resources */,
 				9A3853A91FA556B3004C48F7 /* LaunchScreen.storyboard in Resources */,
 				9A3853AD1FA556B3004C48F7 /* PostedTableViewCell.xib in Resources */,
+				884DE9B21FA84A4500C2206C /* GoogleService-Info.plist in Resources */,
 				3096C8B51FA6CED000600134 /* RankingTableViewCell.xib in Resources */,
 				9A3853AC1FA556B3004C48F7 /* GroupTableViewCell.xib in Resources */,
 			);
@@ -325,7 +329,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
