@@ -8,10 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		3096C8B01FA6CEC400600134 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3096C8AE1FA6CEC400600134 /* File.swift */; };
-		3096C8B11FA6CEC400600134 /* PostData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3096C8AF1FA6CEC400600134 /* PostData.swift */; };
+		3096C8B11FA6CEC400600134 /* BokeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3096C8AF1FA6CEC400600134 /* BokeData.swift */; };
 		3096C8B41FA6CED000600134 /* RankingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3096C8B21FA6CED000600134 /* RankingTableViewCell.swift */; };
 		3096C8B51FA6CED000600134 /* RankingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3096C8B31FA6CED000600134 /* RankingTableViewCell.xib */; };
 		3096C8B71FA6CED800600134 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3096C8B61FA6CED800600134 /* HomeViewController.swift */; };
+		8802AF141FA99D1B0050BA0C /* GroupInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8802AF131FA99D1B0050BA0C /* GroupInfo.swift */; };
+		8802AF161FA99D3F0050BA0C /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8802AF151FA99D3F0050BA0C /* UserInfo.swift */; };
+		8802AF181FA99D6D0050BA0C /* OdaiData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8802AF171FA99D6D0050BA0C /* OdaiData.swift */; };
 		8802CE161F9CC81400E3E538 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8802CE151F9CC81400E3E538 /* AppDelegate.swift */; };
 		8802CE1D1F9CC81400E3E538 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8802CE1C1F9CC81400E3E538 /* Assets.xcassets */; };
 		884DE9B21FA84A4500C2206C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 884DE9B11FA84A4500C2206C /* GoogleService-Info.plist */; };
@@ -41,11 +44,14 @@
 
 /* Begin PBXFileReference section */
 		3096C8AE1FA6CEC400600134 /* File.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
-		3096C8AF1FA6CEC400600134 /* PostData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostData.swift; sourceTree = "<group>"; };
+		3096C8AF1FA6CEC400600134 /* BokeData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BokeData.swift; sourceTree = "<group>"; };
 		3096C8B21FA6CED000600134 /* RankingTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RankingTableViewCell.swift; sourceTree = "<group>"; };
 		3096C8B31FA6CED000600134 /* RankingTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RankingTableViewCell.xib; sourceTree = "<group>"; };
 		3096C8B61FA6CED800600134 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		5346A59EAB66A98853AE74BB /* Pods-ohgiri-app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ohgiri-app.release.xcconfig"; path = "Pods/Target Support Files/Pods-ohgiri-app/Pods-ohgiri-app.release.xcconfig"; sourceTree = "<group>"; };
+		8802AF131FA99D1B0050BA0C /* GroupInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupInfo.swift; sourceTree = "<group>"; };
+		8802AF151FA99D3F0050BA0C /* UserInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
+		8802AF171FA99D6D0050BA0C /* OdaiData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OdaiData.swift; sourceTree = "<group>"; };
 		8802CE121F9CC81400E3E538 /* ohgiri-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ohgiri-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8802CE151F9CC81400E3E538 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8802CE1C1F9CC81400E3E538 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -132,8 +138,11 @@
 		9A38538E1FA556B3004C48F7 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				8802AF131FA99D1B0050BA0C /* GroupInfo.swift */,
+				8802AF151FA99D3F0050BA0C /* UserInfo.swift */,
 				3096C8AE1FA6CEC400600134 /* File.swift */,
-				3096C8AF1FA6CEC400600134 /* PostData.swift */,
+				3096C8AF1FA6CEC400600134 /* BokeData.swift */,
+				8802AF171FA99D6D0050BA0C /* OdaiData.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -342,6 +351,7 @@
 				9A3853BB1FA556B3004C48F7 /* GroupPostViewController.swift in Sources */,
 				9A3853BA1FA556B3004C48F7 /* GroupViewController.swift in Sources */,
 				3096C8B71FA6CED800600134 /* HomeViewController.swift in Sources */,
+				8802AF141FA99D1B0050BA0C /* GroupInfo.swift in Sources */,
 				3096C8B41FA6CED000600134 /* RankingTableViewCell.swift in Sources */,
 				9A3853BC1FA556B3004C48F7 /* AllViewController.swift in Sources */,
 				9A3853B91FA556B3004C48F7 /* LikesViewController.swift in Sources */,
@@ -351,12 +361,14 @@
 				9A3853BD1FA556B3004C48F7 /* RegisterViewController.swift in Sources */,
 				9A3853B11FA556B3004C48F7 /* AllTableViewCell.swift in Sources */,
 				9A3853B21FA556B3004C48F7 /* LikesTableViewCell.swift in Sources */,
-				3096C8B11FA6CEC400600134 /* PostData.swift in Sources */,
+				3096C8B11FA6CEC400600134 /* BokeData.swift in Sources */,
 				9A3853B51FA556B3004C48F7 /* RankingViewController.swift in Sources */,
 				9A3853B81FA556B3004C48F7 /* PurchaseViewController.swift in Sources */,
 				9A3853AB1FA556B3004C48F7 /* PostedTableViewCell.swift in Sources */,
 				9A3853B31FA556B3004C48F7 /* PurchaseTableViewCell.swift in Sources */,
+				8802AF181FA99D6D0050BA0C /* OdaiData.swift in Sources */,
 				9A3853B61FA556B3004C48F7 /* ViewController.swift in Sources */,
+				8802AF161FA99D3F0050BA0C /* UserInfo.swift in Sources */,
 				8802CE161F9CC81400E3E538 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
