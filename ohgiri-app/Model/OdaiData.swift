@@ -12,5 +12,11 @@ import FirebaseDatabase
 
 class OdaiData: NSObject {
     var id: String?
+    var image: UIImage?
+    var imageString: String?
+    
+    /**
+     * TODO: 課金情報
+    */
 }
 
