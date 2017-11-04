@@ -55,4 +55,26 @@ class BokeData: NSObject {
 
     }
 
+    override init() {
+        super.init()
+    }
+    
+    /// こういう風に書くModelクラスで適当に定義しておく
+    ///
+    /// - Returns: [BokeData]
+    static func getDebugList() -> [BokeData] {
+        var result: [BokeData] = []
+        
+        for i in 1..<11 {
+            let value = BokeData()
+            value.id = String(i)
+            /*
+             他に仮としてデータ突っ込んでみる
+            */
+            
+            result.append(value)
+        }
+        
+        return result
+    }
 }

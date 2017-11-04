@@ -10,11 +10,17 @@ import UIKit
 
 class HomeViewController: UIViewController {
 
+    /// こいつでUITableViewとか描画するテストするといいですよ
+    private let debugList = BokeData.getDebugList()
+    
     @IBOutlet weak var myImageView: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        // デバッグデータ
+        
     }
 
     override func didReceiveMemoryWarning() {
