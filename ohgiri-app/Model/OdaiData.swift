@@ -12,5 +12,11 @@ import FirebaseDatabase
 
 class OdaiData: NSObject {
     var id: String?
+    var image: UIImage?
+    var imageString: String?
+    var bokes: [String] = []
+    var date: NSDate?
+    var isPurchase : String?
+    var userId : String?
 }
 

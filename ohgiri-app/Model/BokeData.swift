@@ -12,21 +12,18 @@ import FirebaseDatabase
 
 class BokeData: NSObject {
     var id: String?
-    var odai: UIImage?
-    var odaiString: String?
     var name: String?
     var boke: String?
     var date: NSDate?
     var likes: [String] = []
+    var heits: [String] = []
     var isLiked: Bool = false
+    var isHeited: Bool = false
     
     init(snapshot: DataSnapshot, myId: String) {
         self.id = snapshot.key
         
         let valueDictionary = snapshot.value as! [String: AnyObject]
-        
-        odaiString = valueDictionary["odai"] as? String
-        odai = UIImage(data: NSData(base64Encoded: odaiString!, options: .ignoreUnknownCharacters)! as Data)
         
         self.name = valueDictionary["name"] as? String
         
@@ -45,6 +42,17 @@ class BokeData: NSObject {
                 break
             }
         }
+        if let heits = valueDictionary["heits"] as? [String] {
+            self.heits = heits
+        }
+        
+        for heitId in self.heits {
+            if heitId == myId {
+                self.isHeited = true
+                break
+            }
+        }
+
     }
 
 }

@@ -12,5 +12,7 @@ import FirebaseDatabase
 
 class GroupInfo: NSObject {
     var id: String?
+    var users: String?
+    var name: String?
 
 }

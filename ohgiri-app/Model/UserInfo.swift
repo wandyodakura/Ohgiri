@@ -12,5 +12,8 @@ import FirebaseDatabase
 
 class UserInfo: NSObject {
     var id: String?
+    var name: String?
+    var passward: Int?
+    var mail: Any?
 
 }
