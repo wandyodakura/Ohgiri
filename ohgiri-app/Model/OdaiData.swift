@@ -14,9 +14,30 @@ class OdaiData: NSObject {
     var id: String?
     var image: UIImage?
     var imageString: String?
-    var bokes: [String] = []
+    var bokes: String?
     var date: NSDate?
-    var isPurchase : String?
+    var isPurchase: Bool = false
     var userId : String?
+    init(snapshot: DataSnapshot, myId: String) {
+        self.id = snapshot.key
+        
+        let valueDictionary = snapshot.value as! [String: AnyObject]
+        
+        imageString = valueDictionary["image"] as? String
+        image = UIImage(data: NSData(base64Encoded: imageString!, options: .ignoreUnknownCharacters)! as Data)
+        
+        self.bokes = valueDictionary["bokes"] as? String
+        
+        let time = valueDictionary["time"] as? String
+        self.date = NSDate(timeIntervalSinceReferenceDate: TimeInterval(time!)!)
+        
+        self.userId = valueDictionary["userId"] as? String
+        //valuedictionalyのあたりは適当だからあとで検討する purchaseもまだ書いてない
+        
+        
+        
+                }
+
 }
+
 

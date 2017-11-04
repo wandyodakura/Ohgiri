@@ -15,4 +15,15 @@ class GroupInfo: NSObject {
     var users: String?
     var name: String?
 
+    init(snapshot: DataSnapshot, myId: String) {
+        self.id = snapshot.key
+        
+        let valueDictionary = snapshot.value as! [String: AnyObject]
+        
+        self.name = valueDictionary["name"] as? String
+        
+        self.users = valueDictionary["users"] as? String
+    }
+
 }
+

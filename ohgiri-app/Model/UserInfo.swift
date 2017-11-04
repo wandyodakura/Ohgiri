@@ -15,5 +15,19 @@ class UserInfo: NSObject {
     var name: String?
     var passward: Int?
     var mail: Any?
+    
+    init(snapshot: DataSnapshot, myId: String) {
+        self.id = snapshot.key
+        
+        let valueDictionary = snapshot.value as! [String: AnyObject]
+        
+        self.name = valueDictionary["name"] as? String
+        
+        self.passward = valueDictionary["passward"] as? Int
+        
+        self.mail = valueDictionary["mail"] as? Any
+    }
+    
 
 }
+

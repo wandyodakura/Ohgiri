@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -15,40 +16,48 @@
             <rect key="frame" x="0.0" y="0.0" width="337" height="252"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="337" height="252"/>
+                <rect key="frame" x="0.0" y="0.0" width="337" height="251.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="02D-h0-rD1">
-                        <rect key="frame" x="273" y="168" width="46" height="30"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="名前" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t7B-DL-hc6">
+                        <rect key="frame" x="28" y="177" width="35" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="ボケ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Ax-Cw-z1n">
+                        <rect key="frame" x="83" y="177" width="35" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="票数" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n0t-rn-0Q0">
+                        <rect key="frame" x="138" y="177" width="35" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="c4U-lR-A3S">
+                        <rect key="frame" x="28" y="24" width="281" height="128"/>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="02D-h0-rD1">
+                        <rect key="frame" x="278" y="177" width="31" height="30"/>
                         <state key="normal" title="削除"/>
                     </button>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="名前" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t7B-DL-hc6">
-                        <rect key="frame" x="48" y="173" width="42" height="21"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <nil key="textColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ボケ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Ax-Cw-z1n">
-                        <rect key="frame" x="147" y="173" width="42" height="21"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <nil key="textColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="票数" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n0t-rn-0Q0">
-                        <rect key="frame" x="223" y="173" width="42" height="21"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <nil key="textColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="c4U-lR-A3S">
-                        <rect key="frame" x="48" y="24" width="240" height="128"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    </imageView>
                 </subviews>
+                <constraints>
+                    <constraint firstItem="3Ax-Cw-z1n" firstAttribute="top" secondItem="c4U-lR-A3S" secondAttribute="bottom" constant="20" id="2lJ-lE-GcZ"/>
+                    <constraint firstItem="3Ax-Cw-z1n" firstAttribute="leading" secondItem="t7B-DL-hc6" secondAttribute="trailing" constant="20" id="8bR-Ea-oWx"/>
+                    <constraint firstItem="02D-h0-rD1" firstAttribute="top" secondItem="c4U-lR-A3S" secondAttribute="bottom" constant="20" id="AwT-G7-DA1"/>
+                    <constraint firstItem="t7B-DL-hc6" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="20" id="ETZ-fF-Ud5"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="c4U-lR-A3S" secondAttribute="trailing" constant="20" id="GQt-Aj-C7H"/>
+                    <constraint firstItem="c4U-lR-A3S" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="10" id="QDu-fF-l9F"/>
+                    <constraint firstItem="t7B-DL-hc6" firstAttribute="top" secondItem="c4U-lR-A3S" secondAttribute="bottom" constant="20" id="RH2-dJ-J77"/>
+                    <constraint firstItem="c4U-lR-A3S" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="20" id="TH9-rc-SEW"/>
+                    <constraint firstItem="n0t-rn-0Q0" firstAttribute="leading" secondItem="3Ax-Cw-z1n" secondAttribute="trailing" constant="20" id="lWo-YI-bmA"/>
+                    <constraint firstItem="n0t-rn-0Q0" firstAttribute="top" secondItem="c4U-lR-A3S" secondAttribute="bottom" constant="20" id="qjG-Im-3rN"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="02D-h0-rD1" secondAttribute="trailing" constant="20" id="rLN-rz-yau"/>
+                </constraints>
             </tableViewCellContentView>
             <connections>
                 <outlet property="bokeLabel" destination="3Ax-Cw-z1n" id="ZrD-vb-4lI"/>
