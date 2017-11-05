@@ -14,7 +14,7 @@ class OdaiData: NSObject {
     var id: String?
     var image: UIImage?
     var imageString: String?
-    var bokes: String?
+    var bokes: [String] = []
     var date: NSDate?
     var isPurchase: Bool = false
     var userId : String?
@@ -26,7 +26,9 @@ class OdaiData: NSObject {
         imageString = valueDictionary["image"] as? String
         image = UIImage(data: NSData(base64Encoded: imageString!, options: .ignoreUnknownCharacters)! as Data)
         
-        self.bokes = valueDictionary["bokes"] as? String
+        if let bokes = valueDictionary["bokes"] as? [String] {
+            self.bokes = bokes
+        }
         
         let time = valueDictionary["time"] as? String
         self.date = NSDate(timeIntervalSinceReferenceDate: TimeInterval(time!)!)
@@ -36,8 +38,8 @@ class OdaiData: NSObject {
         
         
         
-                }
-
+    }
+    
 }
 
 
