@@ -35,24 +35,15 @@ class BokeData: NSObject {
         if let likes = valueDictionary["likes"] as? [String] {
             self.likes = likes
         }
-        
-        for likeId in self.likes {
-            if likeId == myId {
-                self.isLiked = true
-                break
-            }
-        }
         if let heits = valueDictionary["heits"] as? [String] {
             self.heits = heits
         }
-        
-        for heitId in self.heits {
-            if heitId == myId {
-                self.isHeited = true
-                break
-            }
-        }
 
+        // Like、Hate(heit)はこのようにすると1行で済むので便利ですよ＾＾
+        // myIdで配列内を検索
+        // あればindex返してなければnilを返すのを判定
+        self.isLiked = self.likes.index(of: myId) != nil
+        self.isHeited = self.heits.index(of: myId) != nil
     }
 
     override init() {
