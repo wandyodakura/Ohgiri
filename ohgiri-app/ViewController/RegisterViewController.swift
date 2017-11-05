@@ -28,10 +28,10 @@ class RegisterViewController: UIViewController {
     }
     @IBAction func registerButton(_ sender: Any){
         
-        if let mail = mailTextField.text, let password = passwordTextField.text, let name = nameTextField.text {
+        if let mail = mailTextField.text, let password = passwordTextField.text, let displayName = nameTextField.text {
             
             // アドレスとパスワードと表示名のいずれかでも入力されていない時は何もしない
-            if mail.characters.isEmpty || password.characters.isEmpty || name.characters.isEmpty {
+            if mail.characters.isEmpty || password.characters.isEmpty || displayName.characters.isEmpty {
                 print("DEBUG_PRINT: 何かが空文字です。")
                 return
             }
@@ -44,23 +44,23 @@ class RegisterViewController: UIViewController {
                     return
                 }
                 print("DEBUG_PRINT: ユーザー作成に成功しました。")
-                
+            }
                 // 表示名を設定する
                 let user = Auth.auth().currentUser
                 if let user = user {
                     let changeRequest = user.createProfileChangeRequest()
-                    changeRequest.name = name
+                    changeRequest.displayName = displayName
                     changeRequest.commitChanges { error in
                         if let error = error {
                             print("DEBUG_PRINT: " + error.localizedDescription)
                         }
-                        print("DEBUG_PRINT: [displayName = \(String(describing: user.name))]の設定に成功しました。")
+                        print("DEBUG_PRINT: [name = \(String(describing: user.displayName))]の設定に成功しました。")
                         
                         // 画面を閉じてViewControllerに戻る
                         self.dismiss(animated: true, completion: nil)
                     }
                 } else {
-                    print("DEBUG_PRINT: nameの設定に失敗しました。")
+                    print("DEBUG_PRINT: displayNameの設定に失敗しました。")
                 }
             }
         
