@@ -7,11 +7,16 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseDatabase
+import SVProgressHUD
 
 class GroupPostViewController: UIViewController {
 
     @IBOutlet weak var odaiImageView: UIImageView!
     @IBOutlet weak var bokeTextView: UITextView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -23,8 +28,16 @@ class GroupPostViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     @IBAction func postButton(_ sender: Any){
-    
-         self.dismiss(animated: true, completion: nil)
+        let date = NSDate.timeIntervalSinceReferenceDate
+        let name = Auth.auth().currentUser?.displayName
+        
+        let postRef = Database.database().reference().child(Const.PostPath)
+        let postData = ["boke": bokeTextView.text!, "time": String(describing: time), "name": name!]
+        postRef.childByAutoId().setValue(postData)
+        
+        SVProgressHUD.showSuccess(withStatus: "投稿しました")
+
+        self.dismiss(animated: true, completion: nil)
     }
     
 
