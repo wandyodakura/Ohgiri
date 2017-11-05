@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3096C8B01FA6CEC400600134 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3096C8AE1FA6CEC400600134 /* File.swift */; };
+		3096C8B01FA6CEC400600134 /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3096C8AE1FA6CEC400600134 /* Const.swift */; };
 		3096C8B11FA6CEC400600134 /* BokeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3096C8AF1FA6CEC400600134 /* BokeData.swift */; };
 		3096C8B41FA6CED000600134 /* RankingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3096C8B21FA6CED000600134 /* RankingTableViewCell.swift */; };
 		3096C8B51FA6CED000600134 /* RankingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3096C8B31FA6CED000600134 /* RankingTableViewCell.xib */; };
@@ -43,7 +43,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3096C8AE1FA6CEC400600134 /* File.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		3096C8AE1FA6CEC400600134 /* Const.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
 		3096C8AF1FA6CEC400600134 /* BokeData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BokeData.swift; sourceTree = "<group>"; };
 		3096C8B21FA6CED000600134 /* RankingTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RankingTableViewCell.swift; sourceTree = "<group>"; };
 		3096C8B31FA6CED000600134 /* RankingTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RankingTableViewCell.xib; sourceTree = "<group>"; };
@@ -140,7 +140,7 @@
 			children = (
 				8802AF131FA99D1B0050BA0C /* GroupInfo.swift */,
 				8802AF151FA99D3F0050BA0C /* UserInfo.swift */,
-				3096C8AE1FA6CEC400600134 /* File.swift */,
+				3096C8AE1FA6CEC400600134 /* Const.swift */,
 				3096C8AF1FA6CEC400600134 /* BokeData.swift */,
 				8802AF171FA99D6D0050BA0C /* OdaiData.swift */,
 			);
@@ -355,7 +355,7 @@
 				9A3853BC1FA556B3004C48F7 /* AllViewController.swift in Sources */,
 				9A3853B91FA556B3004C48F7 /* LikesViewController.swift in Sources */,
 				9A3853B71FA556B3004C48F7 /* PostedViewController.swift in Sources */,
-				3096C8B01FA6CEC400600134 /* File.swift in Sources */,
+				3096C8B01FA6CEC400600134 /* Const.swift in Sources */,
 				9A3853AF1FA556B3004C48F7 /* GroupTableViewCell.swift in Sources */,
 				9A3853BD1FA556B3004C48F7 /* RegisterViewController.swift in Sources */,
 				9A3853B11FA556B3004C48F7 /* AllTableViewCell.swift in Sources */,
