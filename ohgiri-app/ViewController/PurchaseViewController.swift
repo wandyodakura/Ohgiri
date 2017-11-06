@@ -9,6 +9,9 @@
 import UIKit
 
 class PurchaseViewController: UIViewController {
+    
+    @IBOutlet weak var returnButton: UIButton!
+
     @IBOutlet weak var purchaseTableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
