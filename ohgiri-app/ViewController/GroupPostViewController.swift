@@ -31,7 +31,7 @@ class GroupPostViewController: UIViewController {
         let date = NSDate.timeIntervalSinceReferenceDate
         let name = Auth.auth().currentUser?.displayName
         
-        let postRef = Database.database().reference().child(Const.PostPath)
+        let postRef = Database.database().reference().child(Const.BokePath)
         let postData = ["boke": bokeTextView.text!, "time": String(describing: time), "name": name!]
         postRef.childByAutoId().setValue(postData)
         

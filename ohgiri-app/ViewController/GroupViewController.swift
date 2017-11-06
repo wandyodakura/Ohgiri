@@ -24,10 +24,8 @@ class GroupViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    @IBAction func postButton(_ sender: Any){
         
-    }
-    
+    @IBAction func groupUnwind(_ segue: UIStoryboardSegue) { }
 
     
 

@@ -135,6 +135,7 @@
                                 <state key="normal" title="投稿"/>
                                 <connections>
                                     <action selector="postButton:" destination="N9E-hX-eDD" eventType="touchUpInside" id="Ecs-Ms-WHQ"/>
+                                    <segue destination="Jhw-9j-8gP" kind="unwind" unwindAction="groupUnwind:" id="BIk-xD-gXX"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="MQg-tJ-BFK">
@@ -187,6 +188,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1jz-aR-u7O" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="Jhw-9j-8gP" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="108" y="1478.4107946026988"/>
         </scene>
@@ -210,7 +212,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="VvR-xH-vUQ" id="C5Z-2O-Fbx">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -224,6 +226,9 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <state key="normal" title="戻る"/>
+                                <connections>
+                                    <segue destination="ju6-5N-rPg" kind="unwind" unwindAction="groupUnwind:" id="RhE-N5-7Vp"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -238,10 +243,10 @@
                     </view>
                     <connections>
                         <outlet property="purchaseTableView" destination="1p4-Ty-qoC" id="lOQ-0B-jrp"/>
-                        <outlet property="returnButton" destination="fbx-x4-xGT" id="SuJ-JX-aIr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oCv-KG-pyp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="ju6-5N-rPg" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="-636" y="785.75712143928047"/>
         </scene>
@@ -271,8 +276,7 @@
                                 </constraints>
                                 <state key="normal" title="投稿する"/>
                                 <connections>
-                                    <action selector="postButton:" destination="R1N-2t-hBB" eventType="touchUpInside" id="2na-tz-IDq"/>
-                                    <segue destination="N9E-hX-eDD" kind="show" id="Kxp-w1-1MO"/>
+                                    <segue destination="N9E-hX-eDD" kind="show" id="i4g-mF-izg"/>
                                 </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="y2R-wL-Xl1">

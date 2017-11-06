@@ -25,32 +25,38 @@
                             <constraint firstAttribute="height" constant="120" id="gpI-or-XCT"/>
                         </constraints>
                     </imageView>
-                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IG0-2Y-tRo">
-                        <rect key="frame" x="242" y="180.5" width="50" height="10"/>
+                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y5h-Z0-kyc">
+                        <rect key="frame" x="210" y="168" width="100" height="10"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k9b-Z2-Wve">
+                                <rect key="frame" x="0.0" y="0.0" width="50" height="10"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="10" id="Ewo-Sb-nAI"/>
+                                    <constraint firstAttribute="width" constant="50" id="KDc-se-h9m"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                                <state key="normal" title="普通に購入"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IG0-2Y-tRo">
+                                <rect key="frame" x="50" y="0.0" width="50" height="10"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="10" id="7sT-Gr-4tQ"/>
+                                    <constraint firstAttribute="width" constant="50" id="Kpc-a4-gB5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                                <state key="normal" title="ビリが購入"/>
+                            </button>
+                        </subviews>
                         <constraints>
-                            <constraint firstAttribute="height" constant="10" id="7sT-Gr-4tQ"/>
-                            <constraint firstAttribute="width" constant="50" id="Kpc-a4-gB5"/>
+                            <constraint firstAttribute="width" constant="100" id="5eO-Pp-PgB"/>
                         </constraints>
-                        <fontDescription key="fontDescription" type="system" pointSize="9"/>
-                        <state key="normal" title="ビリが購入"/>
-                    </button>
-                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k9b-Z2-Wve">
-                        <rect key="frame" x="28" y="180.5" width="50" height="10"/>
-                        <constraints>
-                            <constraint firstAttribute="height" constant="10" id="Ewo-Sb-nAI"/>
-                            <constraint firstAttribute="width" constant="50" id="KDc-se-h9m"/>
-                        </constraints>
-                        <fontDescription key="fontDescription" type="system" pointSize="9"/>
-                        <state key="normal" title="普通に購入"/>
-                    </button>
+                    </stackView>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="k9b-Z2-Wve" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="20" id="5lI-8f-B6G"/>
+                    <constraint firstItem="y5h-Z0-kyc" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" constant="100" id="13W-yw-i9e"/>
                     <constraint firstAttribute="trailingMargin" secondItem="q3x-aO-fuf" secondAttribute="trailing" constant="10" id="Vph-6h-m3c"/>
                     <constraint firstItem="q3x-aO-fuf" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="10" id="anT-C0-KWx"/>
-                    <constraint firstAttribute="bottomMargin" secondItem="k9b-Z2-Wve" secondAttribute="bottom" constant="20" id="i3O-CG-SfL"/>
-                    <constraint firstAttribute="trailingMargin" secondItem="IG0-2Y-tRo" secondAttribute="trailing" constant="20" id="kTt-4T-qv6"/>
-                    <constraint firstAttribute="bottomMargin" secondItem="IG0-2Y-tRo" secondAttribute="bottom" constant="20" id="rbS-sO-A6N"/>
+                    <constraint firstItem="y5h-Z0-kyc" firstAttribute="top" secondItem="q3x-aO-fuf" secondAttribute="bottom" constant="30" id="mTO-y0-B4f"/>
                     <constraint firstItem="q3x-aO-fuf" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="10" id="uUM-6D-s9i"/>
                 </constraints>
             </tableViewCellContentView>

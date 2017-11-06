@@ -6,7 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -16,29 +15,46 @@
             <rect key="frame" x="0.0" y="0.0" width="397" height="171"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="397" height="170.5"/>
+                <rect key="frame" x="0.0" y="0.0" width="397" height="171"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="名前" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DNc-Qk-jh2">
-                        <rect key="frame" x="58" y="38" width="35" height="94.5"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <nil key="textColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="合計票数" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ege-6p-oyf">
-                        <rect key="frame" x="269.5" y="38" width="69.5" height="94.5"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <nil key="textColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
+                    <stackView opaque="NO" contentMode="scaleToFill" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="PTH-17-tQs">
+                        <rect key="frame" x="99" y="75" width="200" height="20.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="名前" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DNc-Qk-jh2">
+                                <rect key="frame" x="0.0" y="0.0" width="140" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="gO7-v5-Fcz">
+                                <rect key="frame" x="140" y="0.0" width="60" height="17"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="du0-qg-i9l">
+                                        <rect key="frame" x="0.0" y="0.0" width="60" height="17"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="合計票数" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ege-6p-oyf">
+                                                <rect key="frame" x="0.0" y="0.0" width="60" height="17"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="60" id="Qri-D1-nyn"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="200" id="Yti-De-vU4"/>
+                        </constraints>
+                    </stackView>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="DNc-Qk-jh2" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="30" id="4D0-sZ-Iw7"/>
-                    <constraint firstAttribute="bottomMargin" secondItem="ege-6p-oyf" secondAttribute="bottom" constant="30" id="6sY-X1-7cp"/>
-                    <constraint firstAttribute="trailingMargin" secondItem="ege-6p-oyf" secondAttribute="trailing" constant="50" id="giA-mB-ozb"/>
-                    <constraint firstAttribute="bottomMargin" secondItem="DNc-Qk-jh2" secondAttribute="bottom" constant="30" id="rnb-EA-BMr"/>
-                    <constraint firstItem="DNc-Qk-jh2" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="50" id="v4N-mQ-yuT"/>
-                    <constraint firstItem="ege-6p-oyf" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="30" id="z1m-jH-0At"/>
+                    <constraint firstItem="PTH-17-tQs" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="mGX-zo-uyi"/>
+                    <constraint firstItem="PTH-17-tQs" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="xl6-0v-Ubj"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
