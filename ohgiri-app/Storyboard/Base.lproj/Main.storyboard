@@ -47,7 +47,10 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XTf-Zs-hSJ">
-                                <rect key="frame" x="146" y="291" width="83" height="30"/>
+                                <rect key="frame" x="167.5" y="291" width="40" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="WLh-6G-OQb"/>
+                                </constraints>
                                 <state key="normal" title="登録"/>
                                 <connections>
                                     <action selector="registerButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1Md-I0-wBq"/>
@@ -66,10 +69,9 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="XTf-Zs-hSJ" secondAttribute="trailing" constant="130" id="92e-e0-7Y7"/>
+                            <constraint firstItem="XTf-Zs-hSJ" firstAttribute="centerX" secondItem="bQS-38-Lvd" secondAttribute="centerX" id="1Wr-31-jih"/>
                             <constraint firstItem="VOk-n1-33a" firstAttribute="centerX" secondItem="bQS-38-Lvd" secondAttribute="centerX" id="A78-7M-XOt"/>
                             <constraint firstItem="XTf-Zs-hSJ" firstAttribute="top" secondItem="VOk-n1-33a" secondAttribute="bottom" constant="40" id="C65-uH-pBr"/>
-                            <constraint firstItem="XTf-Zs-hSJ" firstAttribute="leading" secondItem="bQS-38-Lvd" secondAttribute="leadingMargin" constant="130" id="E7M-nX-K9j"/>
                             <constraint firstItem="Qws-7r-E6X" firstAttribute="leading" secondItem="bQS-38-Lvd" secondAttribute="leadingMargin" constant="120" id="F0d-zL-BhD"/>
                             <constraint firstItem="Qws-7r-E6X" firstAttribute="top" secondItem="Png-Lx-bSe" secondAttribute="bottom" constant="10" id="QRt-Y8-9kb"/>
                             <constraint firstItem="GJQ-Bp-cft" firstAttribute="centerX" secondItem="bQS-38-Lvd" secondAttribute="centerX" id="ad7-zh-J3w"/>
