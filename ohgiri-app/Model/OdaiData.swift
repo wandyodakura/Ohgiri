@@ -17,7 +17,7 @@ class OdaiData: NSObject {
     var bokes: [String] = []
     var date: NSDate?
     var userId : String?
-    init(snapshot: DataSnapshot, myId: String) {
+        init(snapshot: DataSnapshot, myId: String) {
         self.id = snapshot.key
         
         let valueDictionary = snapshot.value as! [String: AnyObject]

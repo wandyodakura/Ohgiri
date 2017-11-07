@@ -75,6 +75,9 @@
                             <constraint firstAttribute="width" constant="30" id="wku-9u-cCY"/>
                         </constraints>
                         <state key="normal" title="○"/>
+                        <connections>
+                            <action selector="likeButton:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="FwH-b2-OCL"/>
+                        </connections>
                     </button>
                 </subviews>
                 <constraints>
@@ -92,6 +95,7 @@
                 <outlet property="nameLabel" destination="Kjy-qz-Kqz" id="o9j-ns-iGZ"/>
                 <outlet property="numberLabel" destination="JBT-BM-KnS" id="6Kh-uj-wwE"/>
                 <outlet property="odaiImageView" destination="gZ3-cU-1ko" id="RHV-cM-WB9"/>
+                <outlet property="voteButton" destination="89y-Uk-Bmm" id="1zJ-Ev-zVa"/>
                 <outlet property="votesLabel" destination="Uco-0I-T9G" id="BqO-JE-Coc"/>
             </connections>
             <point key="canvasLocation" x="38.5" y="162"/>

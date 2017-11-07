@@ -12,6 +12,7 @@ class GroupViewController: UIViewController {
 
     @IBOutlet weak var groupTableView: UITableView!
 
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -27,7 +28,9 @@ class GroupViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
         
-    @IBAction func groupUnwind(_ segue: UIStoryboardSegue) { }
+    @IBAction func groupUnwind(_ segue: UIStoryboardSegue) {
+    
+    }
 
     
 

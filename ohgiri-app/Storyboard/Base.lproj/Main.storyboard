@@ -200,6 +200,80 @@
             </objects>
             <point key="canvasLocation" x="108" y="1478.4107946026988"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="181-Qz-pe2">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TC4-5w-Itg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="K8m-X4-MdN" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ke8-3N-nYX"/>
+                        <viewControllerLayoutGuide type="bottom" id="n5k-zr-5tY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="OY5-FZ-YgE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="グループ参加画面" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nHV-1h-wMX">
+                                <rect key="frame" x="117.5" y="30" width="139" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="zDV-lo-Hfh">
+                                <rect key="frame" x="0.0" y="60.5" width="375" height="606.5"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pAr-DD-AeN">
+                                        <rect key="frame" x="267" y="0.0" width="108" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="Aos-Os-wI8"/>
+                                        </constraints>
+                                        <state key="normal" title="グループを作成"/>
+                                    </button>
+                                    <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="ocv-0o-sEn">
+                                        <rect key="frame" x="0.0" y="40" width="375" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="fFb-e2-JDU"/>
+                                        </constraints>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </searchBar>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="TLw-7b-Mv9">
+                                        <rect key="frame" x="0.0" y="80" width="375" height="526.5"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <prototypes>
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="ifw-Rx-zlg">
+                                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ifw-Rx-zlg" id="Ktl-eZ-Bc8">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </tableViewCellContentView>
+                                            </tableViewCell>
+                                        </prototypes>
+                                    </tableView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="pAr-DD-AeN" secondAttribute="trailing" id="0PF-5z-OTK"/>
+                                    <constraint firstAttribute="bottom" secondItem="TLw-7b-Mv9" secondAttribute="bottom" id="J13-R0-0w4"/>
+                                    <constraint firstAttribute="trailing" secondItem="ocv-0o-sEn" secondAttribute="trailing" id="u5S-Yd-2TC"/>
+                                    <constraint firstAttribute="trailing" secondItem="pAr-DD-AeN" secondAttribute="trailing" id="uEP-TU-fq1"/>
+                                    <constraint firstItem="ocv-0o-sEn" firstAttribute="leading" secondItem="zDV-lo-Hfh" secondAttribute="leading" id="zaU-xc-S3p"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="nHV-1h-wMX" firstAttribute="top" secondItem="ke8-3N-nYX" secondAttribute="bottom" constant="10" id="23G-iK-3mX"/>
+                            <constraint firstItem="nHV-1h-wMX" firstAttribute="centerX" secondItem="OY5-FZ-YgE" secondAttribute="centerX" id="VTO-ps-l28"/>
+                            <constraint firstItem="n5k-zr-5tY" firstAttribute="top" secondItem="zDV-lo-Hfh" secondAttribute="bottom" id="pgY-WV-NPV"/>
+                            <constraint firstAttribute="trailing" secondItem="zDV-lo-Hfh" secondAttribute="trailing" id="qSN-MD-UI7"/>
+                            <constraint firstItem="zDV-lo-Hfh" firstAttribute="leading" secondItem="OY5-FZ-YgE" secondAttribute="leading" id="w6d-kd-jIS"/>
+                            <constraint firstItem="zDV-lo-Hfh" firstAttribute="top" secondItem="nHV-1h-wMX" secondAttribute="bottom" constant="10" id="yp5-Xd-dEt"/>
+                        </constraints>
+                    </view>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="1032.8" y="1488.305847076462"/>
+        </scene>
         <!--Group View Controller-->
         <scene sceneID="14d-N0-IhX">
             <objects>

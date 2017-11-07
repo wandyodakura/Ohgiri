@@ -33,7 +33,13 @@ class BokeData: NSObject {
         if let likes = valueDictionary["likes"] as? [String] {
             self.likes = likes
         }
-        
+        for likeId in self.likes {
+            if likeId == myId {
+                self.isLiked = true
+                break
+                
+            }
+        }
         // Like、Hate(heit)はこのようにすると1行で済むので便利ですよ＾＾
         // myIdで配列内を検索
         // あればindex返してなければnilを返すのを判定
