@@ -18,6 +18,8 @@ class GroupViewController: UIViewController {
         groupTableView.delegate=self
         groupTableView.dataSource=self
         // Do any additional setup after loading the view.
+        groupTableView.allowsSelection = false
+
     }
 
     override func didReceiveMemoryWarning() {

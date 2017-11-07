@@ -14,7 +14,8 @@ class LikesTableViewCell: UITableViewCell {
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var bokeLabel: UILabel!
     @IBOutlet weak var likesLabel: UILabel!
-
+    @IBOutlet weak var dateLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -25,5 +26,19 @@ class LikesTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-    
+    func setBokeData(bokeData: BokeData){
+        //imageViewは後回し
+        self.bokeLabel.text="\(bokeData.boke!)"
+        self.nameLabel.text="\(bokeData.name!)"
+        let likeNumber = bokeData.likes.count
+        likesLabel.text = "\(likeNumber)"
+        let formatter = DateFormatter()
+        formatter.locale = NSLocale(localeIdentifier: "ja_JP") as Locale!
+        formatter.dateFormat = "yyyy-MM-dd HH:mm"
+        
+        let dateString:String = formatter.string(from: bokeData.date! as Date)
+        self.dateLabel.text = dateString
+
+    }
+
 }

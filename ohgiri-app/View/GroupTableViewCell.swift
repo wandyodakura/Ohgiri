@@ -25,5 +25,12 @@ class GroupTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-    
+    func setBokeData(bokeData: BokeData){
+        //imageViewとnumberは後回し
+        self.bokeLabel.text="\(bokeData.boke!)"
+        self.nameLabel.text="\(bokeData.name!)"
+        let likeNumber = bokeData.likes.count
+        votesLabel.text = "\(likeNumber)"
+    }
+
 }

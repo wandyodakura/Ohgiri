@@ -8,7 +8,8 @@
 
 import UIKit
 import ESTabBarController
-
+import Firebase
+import FirebaseAuth
 class ViewController: UIViewController {
    
     
@@ -22,6 +23,19 @@ class ViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        // currentUserがnilならログインしていない
+        if Auth.auth().currentUser == nil {
+            // ログインしていないときの処理
+            // viewDidAppear内でpresent()を呼び出しても表示されないためメソッドが終了してから呼ばれるようにする
+            DispatchQueue.main.async {
+                let registerViewController = self.storyboard?.instantiateViewController(withIdentifier: "Register")
+                self.present(registerViewController!, animated: true, completion: nil)
+            }
+        }
     }
     
     /// EsTab設定

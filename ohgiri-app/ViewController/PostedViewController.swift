@@ -15,6 +15,8 @@ class PostedViewController: UIViewController {
         postedTableView.delegate=self
         postedTableView.dataSource=self
         // Do any additional setup after loading the view.
+        postedTableView.allowsSelection = false
+
     }
     
     override func didReceiveMemoryWarning() {

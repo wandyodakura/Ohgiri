@@ -18,6 +18,8 @@ class RankingViewController: UIViewController {
         rankingTableView.delegate=self
         rankingTableView.dataSource=self
         // Do any additional setup after loading the view.
+        rankingTableView.allowsSelection = false
+
     }
 
     override func didReceiveMemoryWarning() {

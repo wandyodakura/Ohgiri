@@ -16,9 +16,7 @@ class BokeData: NSObject {
     var boke: String?
     var date: NSDate?
     var likes: [String] = []
-    var heits: [String] = []
     var isLiked: Bool = false
-    var isHeited: Bool = false
     
     init(snapshot: DataSnapshot, myId: String) {
         self.id = snapshot.key
@@ -35,16 +33,12 @@ class BokeData: NSObject {
         if let likes = valueDictionary["likes"] as? [String] {
             self.likes = likes
         }
-        if let heits = valueDictionary["heits"] as? [String] {
-            self.heits = heits
-        }
-
+        
         // Like、Hate(heit)はこのようにすると1行で済むので便利ですよ＾＾
         // myIdで配列内を検索
         // あればindex返してなければnilを返すのを判定
         self.isLiked = self.likes.index(of: myId) != nil
-        self.isHeited = self.heits.index(of: myId) != nil
-    }
+            }
 
     override init() {
         super.init()

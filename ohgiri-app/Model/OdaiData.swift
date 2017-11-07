@@ -16,7 +16,6 @@ class OdaiData: NSObject {
     var imageString: String?
     var bokes: [String] = []
     var date: NSDate?
-    var isPurchase: Bool = false
     var userId : String?
     init(snapshot: DataSnapshot, myId: String) {
         self.id = snapshot.key
@@ -34,7 +33,7 @@ class OdaiData: NSObject {
         self.date = NSDate(timeIntervalSinceReferenceDate: TimeInterval(time!)!)
         
         self.userId = valueDictionary["userId"] as? String
-        //valuedictionalyのあたりは適当だからあとで検討する purchaseもまだ書いてない
+        //valuedictionalyのあたりは適当だからあとで検討する
         
         
         

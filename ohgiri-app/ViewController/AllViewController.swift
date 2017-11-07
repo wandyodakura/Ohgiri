@@ -18,6 +18,8 @@ class AllViewController: UIViewController {
         allTableView.dataSource=self
 
         // Do any additional setup after loading the view.
+        allTableView.allowsSelection = false
+
     }
 
     override func didReceiveMemoryWarning() {

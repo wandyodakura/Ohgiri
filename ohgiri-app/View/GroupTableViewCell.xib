@@ -76,25 +76,15 @@
                         </constraints>
                         <state key="normal" title="○"/>
                     </button>
-                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lm3-GO-e6A">
-                        <rect key="frame" x="249.5" y="218" width="30" height="30"/>
-                        <constraints>
-                            <constraint firstAttribute="width" constant="30" id="Q7u-QV-UzV"/>
-                            <constraint firstAttribute="height" constant="30" id="S4s-Vu-T0R"/>
-                        </constraints>
-                        <state key="normal" title="❌"/>
-                    </button>
                 </subviews>
                 <constraints>
                     <constraint firstItem="bt4-9Z-U2S" firstAttribute="top" secondItem="gZ3-cU-1ko" secondAttribute="bottom" constant="40" id="4fF-o2-xOB"/>
                     <constraint firstItem="gZ3-cU-1ko" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="10" id="HRZ-1K-TkH"/>
-                    <constraint firstItem="Lm3-GO-e6A" firstAttribute="top" secondItem="bt4-9Z-U2S" secondAttribute="bottom" constant="30" id="VJz-n6-pcw"/>
                     <constraint firstItem="89y-Uk-Bmm" firstAttribute="top" secondItem="bt4-9Z-U2S" secondAttribute="bottom" constant="30" id="XPt-P4-ikJ"/>
                     <constraint firstItem="gZ3-cU-1ko" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="20" id="jaK-Eg-7if"/>
                     <constraint firstAttribute="trailingMargin" secondItem="gZ3-cU-1ko" secondAttribute="trailing" constant="20" id="lX6-ax-oFG"/>
                     <constraint firstItem="89y-Uk-Bmm" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" constant="-100" id="liS-S0-ehk"/>
                     <constraint firstItem="bt4-9Z-U2S" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="pAJ-4T-tBn"/>
-                    <constraint firstItem="Lm3-GO-e6A" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" constant="100" id="r8M-Mz-nPs"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>

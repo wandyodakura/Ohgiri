@@ -15,6 +15,8 @@ class LikesViewController: UIViewController {
         likesTableView.delegate=self
         likesTableView.dataSource=self
         // Do any additional setup after loading the view.
+        likesTableView.allowsSelection = false
+
     }
     
     override func didReceiveMemoryWarning() {

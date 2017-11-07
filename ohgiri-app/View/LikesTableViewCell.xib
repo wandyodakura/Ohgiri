@@ -77,17 +77,29 @@
                             <constraint firstAttribute="height" constant="10" id="cGo-p9-932"/>
                         </constraints>
                     </stackView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="yyyy-MM-dd HH:mm" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fEj-bt-Ngk">
+                        <rect key="frame" x="34" y="218" width="100" height="11"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="wXR-gg-FAS"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
                 <constraints>
+                    <constraint firstItem="fEj-bt-Ngk" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" constant="-120" id="PdJ-x7-DtU"/>
                     <constraint firstAttribute="trailingMargin" secondItem="E4M-CY-qIe" secondAttribute="trailing" constant="10" id="VVf-5z-UbX"/>
                     <constraint firstItem="VD4-3m-W7j" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="ZNK-ao-RoZ"/>
                     <constraint firstItem="VD4-3m-W7j" firstAttribute="top" secondItem="E4M-CY-qIe" secondAttribute="bottom" constant="40" id="dxH-cV-QoI"/>
+                    <constraint firstItem="fEj-bt-Ngk" firstAttribute="top" secondItem="VD4-3m-W7j" secondAttribute="bottom" constant="20" id="uib-Zk-fkx"/>
                     <constraint firstItem="E4M-CY-qIe" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="10" id="wSM-h8-7Yk"/>
                     <constraint firstItem="E4M-CY-qIe" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="20" id="zqZ-AM-tc4"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
                 <outlet property="bokeLabel" destination="vQO-gR-krQ" id="x4F-Dh-gED"/>
+                <outlet property="dateLabel" destination="fEj-bt-Ngk" id="oub-Br-4jf"/>
                 <outlet property="likesLabel" destination="PiW-o7-qbo" id="BsW-D7-YGr"/>
                 <outlet property="nameLabel" destination="v2i-BM-dOK" id="6aa-vg-KYQ"/>
                 <outlet property="odaiImageView" destination="E4M-CY-qIe" id="ceu-xM-hUn"/>
