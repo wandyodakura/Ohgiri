@@ -22,7 +22,8 @@ class GroupViewController: UIViewController {
     var userInfo: UserInfo?
     var groupInfo: GroupInfo?
     var odaiBox: odaiBox?
-   
+    
+    
     
     
     override func viewDidLoad() {
@@ -48,6 +49,7 @@ class GroupViewController: UIViewController {
         timer.fire()
         //likesの多い順に並べる
         bokeArray.sort { $0.likes.count > $1.likes.count }
+        
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -58,6 +60,13 @@ class GroupViewController: UIViewController {
     func update(tm: Timer) {
         // do something
         //お題を変えて、ボケをリセットfor文とか
+        let groupTableViewCell = GroupTableViewCell()
+        groupTableViewCell.bokeData = nil
+        groupTableViewCell.number = nil
+        
+        self.groupTableView.reloadData()
+        
+        
         
     }
     
@@ -111,12 +120,13 @@ class GroupViewController: UIViewController {
             postRef.updateChildValues(likes)
         }
         
+        
     }
     
     @IBAction func allPostButton(_ sender: Any) {
         
     }
-   
+    
     @IBAction func groupUnwind(_ segue: UIStoryboardSegue) {
         
     }
@@ -163,6 +173,16 @@ extension GroupViewController: UITableViewDataSource {
         // TODO: 後ほどしっかり組む
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath as IndexPath) as! GroupTableViewCell
         cell.setBokeData(bokeData: bokeArray[indexPath.row])
+        
+        
+        func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+            //ランキングをtableViewの上からつけるためindexPath.rowを渡す。
+            let groupTableViewCell:GroupTableViewCell = segue.destination as! GroupTableViewCell
+            
+            groupTableViewCell.number = indexPath.row
+            
+        }
+        
         
         
         

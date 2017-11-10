@@ -14,7 +14,7 @@ class GroupInfo: NSObject {
     var id: String?
     var users: [String] = []
     var name: String?
-    var passward: Int?
+    var passward: String?
     var readerName: String?
     
 
@@ -27,7 +27,7 @@ class GroupInfo: NSObject {
         
         self.users = (valueDictionary["users"] as? [String])!
         
-        self.passward = valueDictionary["passward"] as? Int
+        self.passward = valueDictionary["passward"] as? String
         
         self.readerName=valueDictionary["resderName"] as? String
     }

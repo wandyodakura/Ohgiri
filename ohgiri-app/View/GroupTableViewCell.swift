@@ -22,6 +22,11 @@ class GroupTableViewCell: UITableViewCell {
     //votesにユーザーidを追加して投票したか確認する
     var votes:[String] = [""]
     var userInfo: UserInfo?
+    var bokeData: BokeData?
+    var number: Any?
+    var odaiBox: odaiBox?
+   
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -39,10 +44,12 @@ class GroupTableViewCell: UITableViewCell {
     
     func setBokeData(bokeData: BokeData){
         //imageViewとnumberは後回し
+        self.odaiImageView.image = "\(odaiBox?.odai)"
         self.bokeLabel.text="\(bokeData.boke!)"
         self.nameLabel.text="\(bokeData.name!)"
         let likeNumber = bokeData.likes.count
         votesLabel.text = "\(likeNumber)"
+        self.numberLabel.text="\(number)"
         if bokeData.isLiked {
             let buttonImage = UIImage(named: "like_exist")
             self.voteButton.setImage(buttonImage, for: UIControlState.normal)

@@ -10,6 +10,7 @@ import UIKit
 import Firebase
 import FirebaseDatabase
 import SVProgressHUD
+import FirebaseAuth
 
 class NewGroupViewController: UIViewController {
     
@@ -28,29 +29,37 @@ class NewGroupViewController: UIViewController {
     }
     @IBAction func newGroupButton(_ sender: Any) {
         // 辞書を作成してFirebaseに保存する
-        let postRef = Database.database().reference().child(Const.GroupPath)
-        let groupData = ["name": groupNameTextField.text!, "passward": passwardTextField.text!,"readerName": userInfo?.name]
-        postRef.childByAutoId().setValue(groupData)
-        
-        // HUDで投稿完了を表示する
-        SVProgressHUD.showSuccess(withStatus: "投稿しました")
-        
-        // 全てのモーダルを閉じる
-        UIApplication.shared.keyWindow?.rootViewController?.dismiss(animated: true,completion: nil)
-        
-        
+        if passwardTextField.text!.isEmpty || (groupNameTextField.text?.isEmpty)! {
+            print("DEBUG_PRINT: 何かが空文字です。")
+            return
+        }
+        else {
+            
+            let postRef = Database.database().reference().child(Const.GroupPath)
+            let groupData = ["name": groupNameTextField.text!, "passward": passwardTextField.text!,"readerName": userInfo?.name]
+            postRef.childByAutoId().setValue(groupData)
+            
+            // HUDで投稿完了を表示する
+            SVProgressHUD.showSuccess(withStatus: "グループを作成しました")
+            
+            // 全てのモーダルを閉じる
+            UIApplication.shared.keyWindow?.rootViewController?.dismiss(animated: true,completion: nil)
+        }
         
     }
-    
-    
-    /*
-     // MARK: - Navigation
-     
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using segue.destinationViewController.
-     // Pass the selected object to the new view controller.
-     }
-     */
-    
 }
+
+
+
+
+/*
+ // MARK: - Navigation
+ 
+ // In a storyboard-based application, you will often want to do a little preparation before navigation
+ override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+ // Get the new view controller using segue.destinationViewController.
+ // Pass the selected object to the new view controller.
+ }
+ */
+
+

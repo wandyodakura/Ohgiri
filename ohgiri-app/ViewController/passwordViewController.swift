@@ -9,38 +9,47 @@
 import UIKit
 import Firebase
 import FirebaseDatabase
+import SVProgressHUD
 
 class passwordViewController: UIViewController {
-
+    
     @IBOutlet weak var passwardTextField: UITextField!
     var groupInfo: GroupInfo?
     var userInfo: UserInfo?
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     @IBAction func joinButton(_ sender: UIButton) {
         //もしパスワードが正しければgroupInfoにuserIdを加え、間違えてれば入れない
-        let myId = userInfo?.id
-        groupInfo?.users.append(myId!)
+        if passwardTextField.text == (groupInfo?.passward)!{
+            let myId = userInfo?.id
+            groupInfo?.users.append(myId!)
+            UIApplication.shared.keyWindow?.rootViewController?.dismiss(animated: true,completion: nil)
+            
+        }
+        else{
+             print("DEBUG_PRINT: パスワードが違います")
+            return
+        }
         
     }
     
-
+    
     /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     // Get the new view controller using segue.destinationViewController.
+     // Pass the selected object to the new view controller.
+     }
+     */
+    
 }

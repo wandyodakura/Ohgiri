@@ -12,7 +12,7 @@ import Firebase
 
 
 class JoinViewController: UIViewController, UISearchBarDelegate, UITableViewDelegate, UITableViewDataSource {
-
+    
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var joinTableView: UITableView!
     
@@ -20,18 +20,18 @@ class JoinViewController: UIViewController, UISearchBarDelegate, UITableViewDele
     var searchResults:[String] = []
     var groupInfo: GroupInfo?
     var tableGroupArray: [GroupInfo]=[]
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         //初期表示はgroupArray全部うつす。
         tableGroupArray = groupArray
         joinTableView.delegate=self
         //意味不（as以降）
         joinTableView.dataSource=self
         searchBar.delegate = self
-           }
-
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -42,7 +42,7 @@ class JoinViewController: UIViewController, UISearchBarDelegate, UITableViewDele
         tableGroupArray=groupArray.filter{
             ($0.name ?? "").contains(searchBar.text ?? "")
         }
-       
+        
         joinTableView.reloadData()
         searchBar.showsCancelButton = true
     }
@@ -73,14 +73,22 @@ class JoinViewController: UIViewController, UISearchBarDelegate, UITableViewDele
         
         return cell
     }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "passward",sender: indexPath)
     }
-    */
-
+    @IBAction func joinUnwind(_ segue: UIStoryboardSegue) {
+        
+    }
+    
+    
+    /*
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     // Get the new view controller using segue.destinationViewController.
+     // Pass the selected object to the new view controller.
+     }
+     */
+    
 }
