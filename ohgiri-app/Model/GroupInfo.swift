@@ -12,8 +12,11 @@ import FirebaseDatabase
 
 class GroupInfo: NSObject {
     var id: String?
-    var users: String?
+    var users: [String] = []
     var name: String?
+    var passward: Int?
+    var readerName: String?
+    
 
     init(snapshot: DataSnapshot, myId: String) {
         self.id = snapshot.key
@@ -22,7 +25,11 @@ class GroupInfo: NSObject {
         
         self.name = valueDictionary["name"] as? String
         
-        self.users = valueDictionary["users"] as? String
+        self.users = (valueDictionary["users"] as? [String])!
+        
+        self.passward = valueDictionary["passward"] as? Int
+        
+        self.readerName=valueDictionary["resderName"] as? String
     }
 
 }

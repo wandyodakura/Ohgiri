@@ -10,4 +10,5 @@ import Foundation
 
 struct Const {
     static let BokePath = "posts"
+    static let GroupPath = "group"
 }

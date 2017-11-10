@@ -21,7 +21,8 @@ class GroupTableViewCell: UITableViewCell {
     @IBOutlet weak var votesLabel: UILabel!
     //votesにユーザーidを追加して投票したか確認する
     var votes:[String] = [""]
-        override func awakeFromNib() {
+    var userInfo: UserInfo?
+    override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
@@ -31,16 +32,11 @@ class GroupTableViewCell: UITableViewCell {
         
         // Configure the view for the selected state
     }
-    @IBAction func likeButton(_ sender: Any) {
-        //votesにユーザーidを追加して投票したか確認する
-        func setUserInfo(userInfo: UserInfo){
-            votes.append(userInfo.id!)
-            
-        }
-        //もし自分のIDがあればlikebuttonを無効にする
-        
-        
-    }
+    //インスタンス取得
+    
+    
+    
+    
     func setBokeData(bokeData: BokeData){
         //imageViewとnumberは後回し
         self.bokeLabel.text="\(bokeData.boke!)"

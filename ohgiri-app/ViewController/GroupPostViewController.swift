@@ -16,7 +16,7 @@ class GroupPostViewController: UIViewController {
     @IBOutlet weak var odaiImageView: UIImageView!
     @IBOutlet weak var bokeTextView: UITextView!
     
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -31,9 +31,11 @@ class GroupPostViewController: UIViewController {
         let date = NSDate.timeIntervalSinceReferenceDate
         let name = Auth.auth().currentUser?.displayName
         
-        let postRef = Database.database().reference().child(Const.BokePath)
-        let postData = ["boke": bokeTextView.text!, "time": String(describing: time), "name": name!]
-        postRef.childByAutoId().setValue(postData)
+        let bokeRef = Database.database().reference().child(Const.BokePath)
+        let bokeData = ["boke": bokeTextView.text!, "time": String(describing: time), "name": name!]
+        bokeRef.childByAutoId().setValue(bokeData)
+        
+    
         
         SVProgressHUD.showSuccess(withStatus: "投稿しました")
 

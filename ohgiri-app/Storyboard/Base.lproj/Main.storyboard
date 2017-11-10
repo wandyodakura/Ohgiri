@@ -200,11 +200,10 @@
             </objects>
             <point key="canvasLocation" x="108" y="1478.4107946026988"/>
         </scene>
-        <!--View Controller-->
+        <!--Join View Controller-->
         <scene sceneID="181-Qz-pe2">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="TC4-5w-Itg" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <viewController id="K8m-X4-MdN" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Join" id="K8m-X4-MdN" customClass="JoinViewController" customModule="ohgiri_app" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ke8-3N-nYX"/>
                         <viewControllerLayoutGuide type="bottom" id="n5k-zr-5tY"/>
@@ -228,6 +227,9 @@
                                             <constraint firstAttribute="height" constant="40" id="Aos-Os-wI8"/>
                                         </constraints>
                                         <state key="normal" title="グループを作成"/>
+                                        <connections>
+                                            <segue destination="4ud-Hm-Jp5" kind="show" id="Ej6-GZ-qj0"/>
+                                        </connections>
                                     </button>
                                     <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="ocv-0o-sEn">
                                         <rect key="frame" x="0.0" y="40" width="375" height="40"/>
@@ -244,7 +246,7 @@
                                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ifw-Rx-zlg" id="Ktl-eZ-Bc8">
-                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                 </tableViewCellContentView>
                                             </tableViewCell>
@@ -270,9 +272,141 @@
                             <constraint firstItem="zDV-lo-Hfh" firstAttribute="top" secondItem="nHV-1h-wMX" secondAttribute="bottom" constant="10" id="yp5-Xd-dEt"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="joinTableView" destination="TLw-7b-Mv9" id="Xyg-HA-Hcj"/>
+                        <outlet property="searchBar" destination="ocv-0o-sEn" id="348-Ev-yMG"/>
+                    </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TC4-5w-Itg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1032.8" y="1488.305847076462"/>
+            <point key="canvasLocation" x="808.79999999999995" y="1450.5247376311845"/>
+        </scene>
+        <!--Password View Controller-->
+        <scene sceneID="78K-5M-Zw8">
+            <objects>
+                <viewController id="X1Y-pc-ddd" customClass="passwordViewController" customModule="ohgiri_app" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="tVA-xJ-h37"/>
+                        <viewControllerLayoutGuide type="bottom" id="iuG-bx-bfa"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="siv-1z-23V">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="パスワードを入力" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ccy-82-0db">
+                                <rect key="frame" x="123" y="80" width="130" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="HWt-wJ-Kya"/>
+                                    <constraint firstAttribute="width" constant="130" id="g7R-q1-sSt"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J6w-CR-LbO">
+                                <rect key="frame" x="162" y="140" width="50" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="aaU-OO-J0P"/>
+                                    <constraint firstAttribute="height" constant="30" id="am1-ez-l0Q"/>
+                                </constraints>
+                                <state key="normal" title="参加"/>
+                                <connections>
+                                    <action selector="joinButton:" destination="X1Y-pc-ddd" eventType="touchUpInside" id="OBS-xx-rhe"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ccy-82-0db" firstAttribute="centerX" secondItem="siv-1z-23V" secondAttribute="centerX" id="DSJ-z6-Lmp"/>
+                            <constraint firstItem="ccy-82-0db" firstAttribute="top" secondItem="tVA-xJ-h37" secondAttribute="bottom" constant="60" id="Jfq-A0-pES"/>
+                            <constraint firstItem="J6w-CR-LbO" firstAttribute="top" secondItem="ccy-82-0db" secondAttribute="bottom" constant="30" id="YjC-dA-b2D"/>
+                            <constraint firstItem="J6w-CR-LbO" firstAttribute="centerX" secondItem="siv-1z-23V" secondAttribute="centerX" id="qEd-gi-AJY"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="passwardTextField" destination="ccy-82-0db" id="glR-aq-7aW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="V1U-oe-s0W" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="850.39999999999998" y="2114.3928035982012"/>
+        </scene>
+        <!--New Group View Controller-->
+        <scene sceneID="hz1-Ik-gR5">
+            <objects>
+                <viewController id="4ud-Hm-Jp5" customClass="NewGroupViewController" customModule="ohgiri_app" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="RpJ-ie-zZa"/>
+                        <viewControllerLayoutGuide type="bottom" id="4y3-sH-Raf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="If3-Jh-1ye">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6wI-Hd-K9w">
+                                <rect key="frame" x="167" y="170" width="40" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="bnc-0G-0wi"/>
+                                    <constraint firstAttribute="width" constant="40" id="dQH-TR-15R"/>
+                                </constraints>
+                                <state key="normal" title="作成"/>
+                                <connections>
+                                    <action selector="newGroupButton:" destination="4ud-Hm-Jp5" eventType="touchUpInside" id="hgh-6f-Ry0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9om-ut-NVj">
+                                <rect key="frame" x="137.5" y="260" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="30w-Py-4eB"/>
+                                    <constraint firstAttribute="height" constant="30" id="sbt-H3-L7S"/>
+                                </constraints>
+                                <state key="normal" title="キャンセル"/>
+                                <connections>
+                                    <segue destination="dTG-vr-rqS" kind="unwind" unwindAction="groupUnwind:" id="62z-W1-NZg"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="4桁パスワード" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Cux-jx-Vcx">
+                                <rect key="frame" x="137" y="90" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="zG7-ff-leT"/>
+                                    <constraint firstAttribute="height" constant="30" id="zzQ-ov-DyB"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="グループ名" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XWe-Mc-kgR">
+                                <rect key="frame" x="87" y="40" width="200" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="OCL-fc-TcI"/>
+                                    <constraint firstAttribute="height" constant="30" id="mXM-8M-ZjM"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="XWe-Mc-kgR" firstAttribute="top" secondItem="RpJ-ie-zZa" secondAttribute="bottom" constant="20" id="6Ed-kr-7Ig"/>
+                            <constraint firstItem="6wI-Hd-K9w" firstAttribute="top" secondItem="Cux-jx-Vcx" secondAttribute="bottom" constant="50" id="RE6-Um-MGr"/>
+                            <constraint firstItem="9om-ut-NVj" firstAttribute="top" secondItem="6wI-Hd-K9w" secondAttribute="bottom" constant="60" id="VZK-3I-C37"/>
+                            <constraint firstItem="9om-ut-NVj" firstAttribute="centerX" secondItem="If3-Jh-1ye" secondAttribute="centerX" id="Wue-lX-g3I"/>
+                            <constraint firstItem="XWe-Mc-kgR" firstAttribute="centerX" secondItem="If3-Jh-1ye" secondAttribute="centerX" id="fJN-pA-6BR"/>
+                            <constraint firstItem="6wI-Hd-K9w" firstAttribute="centerX" secondItem="If3-Jh-1ye" secondAttribute="centerX" id="hhD-Gy-kyy"/>
+                            <constraint firstItem="Cux-jx-Vcx" firstAttribute="top" secondItem="XWe-Mc-kgR" secondAttribute="bottom" constant="20" id="lZk-bk-vLm"/>
+                            <constraint firstItem="Cux-jx-Vcx" firstAttribute="centerX" secondItem="If3-Jh-1ye" secondAttribute="centerX" id="qyn-gl-TeP"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="groupNameTextField" destination="XWe-Mc-kgR" id="tyb-7z-in9"/>
+                        <outlet property="passwardTextField" destination="Cux-jx-Vcx" id="EbN-Sg-M9A"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NFg-qt-TyZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="dTG-vr-rqS" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1837.5999999999999" y="1487.4062968515743"/>
         </scene>
         <!--Group View Controller-->
         <scene sceneID="14d-N0-IhX">
@@ -327,6 +461,9 @@
                                     <constraint firstAttribute="height" constant="20" id="rvU-dS-8Zt"/>
                                 </constraints>
                                 <state key="normal" title="一位は全国に投稿する"/>
+                                <connections>
+                                    <action selector="allPostButton:" destination="R1N-2t-hBB" eventType="touchUpInside" id="pBS-Bz-DR9"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>

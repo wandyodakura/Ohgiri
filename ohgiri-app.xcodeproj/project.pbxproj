@@ -17,7 +17,13 @@
 		8802AF181FA99D6D0050BA0C /* OdaiData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8802AF171FA99D6D0050BA0C /* OdaiData.swift */; };
 		8802CE161F9CC81400E3E538 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8802CE151F9CC81400E3E538 /* AppDelegate.swift */; };
 		8802CE1D1F9CC81400E3E538 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8802CE1C1F9CC81400E3E538 /* Assets.xcassets */; };
+		8803F46B1FB3FC0000FAAD02 /* passwordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8803F46A1FB3FC0000FAAD02 /* passwordViewController.swift */; };
+		8803F4711FB415A400FAAD02 /* odaiBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8803F4701FB415A400FAAD02 /* odaiBox.swift */; };
 		884DE9B21FA84A4500C2206C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 884DE9B11FA84A4500C2206C /* GoogleService-Info.plist */; };
+		88FE10CA1FB2F372008B5EC7 /* JoinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FE10C91FB2F372008B5EC7 /* JoinViewController.swift */; };
+		88FE10CD1FB2F401008B5EC7 /* JoinTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FE10CB1FB2F401008B5EC7 /* JoinTableViewCell.swift */; };
+		88FE10CE1FB2F401008B5EC7 /* JoinTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88FE10CC1FB2F401008B5EC7 /* JoinTableViewCell.xib */; };
+		88FE10D01FB30502008B5EC7 /* NewGroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FE10CF1FB30502008B5EC7 /* NewGroupViewController.swift */; };
 		9A3853A91FA556B3004C48F7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A3853901FA556B3004C48F7 /* LaunchScreen.storyboard */; };
 		9A3853AA1FA556B3004C48F7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A3853921FA556B3004C48F7 /* Main.storyboard */; };
 		9A3853AB1FA556B3004C48F7 /* PostedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3853951FA556B3004C48F7 /* PostedTableViewCell.swift */; };
@@ -53,7 +59,13 @@
 		8802CE151F9CC81400E3E538 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8802CE1C1F9CC81400E3E538 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8802CE211F9CC81400E3E538 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8803F46A1FB3FC0000FAAD02 /* passwordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = passwordViewController.swift; sourceTree = "<group>"; };
+		8803F4701FB415A400FAAD02 /* odaiBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = odaiBox.swift; sourceTree = "<group>"; };
 		884DE9B11FA84A4500C2206C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		88FE10C91FB2F372008B5EC7 /* JoinViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JoinViewController.swift; sourceTree = "<group>"; };
+		88FE10CB1FB2F401008B5EC7 /* JoinTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JoinTableViewCell.swift; sourceTree = "<group>"; };
+		88FE10CC1FB2F401008B5EC7 /* JoinTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JoinTableViewCell.xib; sourceTree = "<group>"; };
+		88FE10CF1FB30502008B5EC7 /* NewGroupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewGroupViewController.swift; sourceTree = "<group>"; };
 		9A3853911FA556B3004C48F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9A3853931FA556B3004C48F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9A3853951FA556B3004C48F7 /* PostedTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostedTableViewCell.swift; sourceTree = "<group>"; };
@@ -132,6 +144,7 @@
 		9A38538E1FA556B3004C48F7 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				8803F4701FB415A400FAAD02 /* odaiBox.swift */,
 				8802AF131FA99D1B0050BA0C /* GroupInfo.swift */,
 				8802AF151FA99D3F0050BA0C /* UserInfo.swift */,
 				3096C8AE1FA6CEC400600134 /* Const.swift */,
@@ -153,6 +166,8 @@
 		9A3853941FA556B3004C48F7 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				88FE10CB1FB2F401008B5EC7 /* JoinTableViewCell.swift */,
+				88FE10CC1FB2F401008B5EC7 /* JoinTableViewCell.xib */,
 				3096C8B21FA6CED000600134 /* RankingTableViewCell.swift */,
 				3096C8B31FA6CED000600134 /* RankingTableViewCell.xib */,
 				9A3853951FA556B3004C48F7 /* PostedTableViewCell.swift */,
@@ -170,6 +185,9 @@
 		9A38539F1FA556B3004C48F7 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				8803F46A1FB3FC0000FAAD02 /* passwordViewController.swift */,
+				88FE10CF1FB30502008B5EC7 /* NewGroupViewController.swift */,
+				88FE10C91FB2F372008B5EC7 /* JoinViewController.swift */,
 				3096C8B61FA6CED800600134 /* HomeViewController.swift */,
 				9A3853A01FA556B3004C48F7 /* RankingViewController.swift */,
 				9A3853A11FA556B3004C48F7 /* ViewController.swift */,
@@ -259,6 +277,7 @@
 				9A3853AA1FA556B3004C48F7 /* Main.storyboard in Resources */,
 				8802CE1D1F9CC81400E3E538 /* Assets.xcassets in Resources */,
 				9A3853A91FA556B3004C48F7 /* LaunchScreen.storyboard in Resources */,
+				88FE10CE1FB2F401008B5EC7 /* JoinTableViewCell.xib in Resources */,
 				9A3853AD1FA556B3004C48F7 /* PostedTableViewCell.xib in Resources */,
 				884DE9B21FA84A4500C2206C /* GoogleService-Info.plist in Resources */,
 				3096C8B51FA6CED000600134 /* RankingTableViewCell.xib in Resources */,
@@ -337,6 +356,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88FE10D01FB30502008B5EC7 /* NewGroupViewController.swift in Sources */,
 				9A3853BB1FA556B3004C48F7 /* GroupPostViewController.swift in Sources */,
 				9A3853BA1FA556B3004C48F7 /* GroupViewController.swift in Sources */,
 				3096C8B71FA6CED800600134 /* HomeViewController.swift in Sources */,
@@ -345,11 +365,14 @@
 				9A3853BC1FA556B3004C48F7 /* AllViewController.swift in Sources */,
 				9A3853B91FA556B3004C48F7 /* LikesViewController.swift in Sources */,
 				9A3853B71FA556B3004C48F7 /* PostedViewController.swift in Sources */,
+				8803F46B1FB3FC0000FAAD02 /* passwordViewController.swift in Sources */,
 				3096C8B01FA6CEC400600134 /* Const.swift in Sources */,
 				9A3853AF1FA556B3004C48F7 /* GroupTableViewCell.swift in Sources */,
 				9A3853BD1FA556B3004C48F7 /* RegisterViewController.swift in Sources */,
 				9A3853B11FA556B3004C48F7 /* AllTableViewCell.swift in Sources */,
 				9A3853B21FA556B3004C48F7 /* LikesTableViewCell.swift in Sources */,
+				8803F4711FB415A400FAAD02 /* odaiBox.swift in Sources */,
+				88FE10CA1FB2F372008B5EC7 /* JoinViewController.swift in Sources */,
 				3096C8B11FA6CEC400600134 /* BokeData.swift in Sources */,
 				9A3853B51FA556B3004C48F7 /* RankingViewController.swift in Sources */,
 				9A3853AB1FA556B3004C48F7 /* PostedTableViewCell.swift in Sources */,
@@ -357,6 +380,7 @@
 				9A3853B61FA556B3004C48F7 /* ViewController.swift in Sources */,
 				8802AF161FA99D3F0050BA0C /* UserInfo.swift in Sources */,
 				8802CE161F9CC81400E3E538 /* AppDelegate.swift in Sources */,
+				88FE10CD1FB2F401008B5EC7 /* JoinTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

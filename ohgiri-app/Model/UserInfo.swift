@@ -15,6 +15,12 @@ class UserInfo: NSObject {
     var name: String?
     var passward: Int?
     var mail: Any?
+    //likesを押したときに追加
+    var votesRecord: [String] = []
+    //24時になると追加されるデータ
+    var rankRecord: [Int] = []
+    
+    var allRecord: [Int] = []
     
     init(snapshot: DataSnapshot, myId: String) {
         self.id = snapshot.key
@@ -26,6 +32,13 @@ class UserInfo: NSObject {
         self.passward = valueDictionary["passward"] as? Int
         
         self.mail = valueDictionary["mail"] as? Any
+        
+        self.votesRecord = valueDictionary["votesRecord"] as! [String]
+        
+        self.rankRecord = valueDictionary["rankRecord"] as! [Int]
+
+        self.allRecord = valueDictionary["allRecord"] as! [Int]
+
     }
     
 

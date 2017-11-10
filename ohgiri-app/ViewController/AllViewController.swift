@@ -12,6 +12,7 @@ class AllViewController: UIViewController {
 
     @IBOutlet weak var allTableView: UITableView!
 
+    var timer: Timer!
     override func viewDidLoad() {
         super.viewDidLoad()
         allTableView.delegate=self
@@ -21,6 +22,22 @@ class AllViewController: UIViewController {
         allTableView.allowsSelection = false
 
     }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        timer = Timer.scheduledTimer(timeInterval: 86400.0, target: self, selector: #selector(self.update), userInfo: nil, repeats: true)
+        timer.fire()
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(true)
+        timer.invalidate()
+    }
+    
+    func update(tm: Timer) {
+        // do something
+        
+    }
+
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
