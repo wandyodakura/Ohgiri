@@ -12,7 +12,8 @@ import FirebaseDatabase
 
 class odaiBox: NSObject {
 
-    var odai: [UIImage] = []
+    var odai: [String?] = []
+
     
  
     
@@ -23,7 +24,8 @@ class odaiBox: NSObject {
         self.id = snapshot.key
         let valueDictionary = snapshot.value as! [String: AnyObject]
 
-        self.odai = (valueDictionary["odai"] as? [UIImage])!
+        self.odai = (valueDictionary["odai"] as? [String])!
+        var index: Int = 0
         
             
         

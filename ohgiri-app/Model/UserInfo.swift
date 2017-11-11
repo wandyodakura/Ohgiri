@@ -18,9 +18,9 @@ class UserInfo: NSObject {
     //likesを押したときに追加
     var votesRecord: [String] = []
     //24時になると追加されるデータ
-    var rankRecord: [Int] = []
+    var rankRecord: Int?
     
-    var allRecord: [Int] = []
+    var allRecord: Int?
     
     init(snapshot: DataSnapshot, myId: String) {
         self.id = snapshot.key
@@ -35,9 +35,9 @@ class UserInfo: NSObject {
         
         self.votesRecord = valueDictionary["votesRecord"] as! [String]
         
-        self.rankRecord = valueDictionary["rankRecord"] as! [Int]
+        self.rankRecord = valueDictionary["rankRecord"] as! Int
 
-        self.allRecord = valueDictionary["allRecord"] as! [Int]
+        self.allRecord = valueDictionary["allRecord"] as! Int
 
     }
     

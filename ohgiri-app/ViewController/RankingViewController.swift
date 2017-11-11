@@ -11,6 +11,7 @@ import UIKit
 class RankingViewController: UIViewController {
 
     @IBOutlet weak var rankingTableView: UITableView!
+    var userArray: [UserInfo] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,6 +26,10 @@ class RankingViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    override func viewWillAppear(_ animated: Bool){
+        userArray.sort{$0.votesRecord.count > $1.votesRecord.count}
+        
     }
     
 
@@ -66,6 +71,14 @@ extension RankingViewController: UITableViewDataSource {
     /// - Returns: セル
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         // TODO: 後ほどしっかり組む
+        func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+            //ランキングをtableViewの上からつけるためindexPath.rowを渡す。
+            let rankingTableViewCell:RankingTableViewCell = segue.destination as! RankingTableViewCell
+            
+            rankingTableViewCell.votes = indexPath.row
+            
+        }
+
         return UITableViewCell()
     }
 }

@@ -62,6 +62,12 @@ class GroupViewController: UIViewController {
         //お題を変えて、ボケをリセットfor文とか
         let groupTableViewCell = GroupTableViewCell()
         groupTableViewCell.bokeData = nil
+        
+        if groupTableViewCell.number! < (userInfo?.rankRecord)!{
+            let postRef = Database.database().reference().child(Const.BokePath).child((userInfo?.id!)!)
+            let rankRecord = ["rankRecord": groupTableViewCell.number]
+            postRef.updateChildValues(rankRecord)
+        }
         groupTableViewCell.number = nil
         
         self.groupTableView.reloadData()
@@ -94,6 +100,7 @@ class GroupViewController: UIViewController {
         
         let myId = userInfo?.id
         votes.append(myId!)
+        userInfo?.votesRecord.append(myId!)
         
         
         

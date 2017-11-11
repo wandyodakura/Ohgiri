@@ -15,18 +15,36 @@ class HomeViewController: UIViewController,UIImagePickerControllerDelegate{
     //写真のライブラリに接続して設定
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var myImageView: UIImageView!
-    //グループ内で一位何回２位何回みたいな
+    //グループ内で一位が何回か
     @IBOutlet weak var groupRecordLabel: UILabel!
     //総得票数
     @IBOutlet weak var recordLabel: UILabel!
     
+    @IBOutlet weak var votesLabel: UILabel!
+    var userInfo: UserInfo?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        // 記録を更新
         
+        groupRecordLabel.text =  "グループ一位\(userInfo?.rankRecord)回"
+        if userInfo?.rankRecord == nil {
+            groupRecordLabel.text = nil
+            recordLabel.text = "全国ランク最高\(userInfo?.allRecord)位"
+            votesLabel.text = "合計投票数\(userInfo?.votesRecord)票"
+            if userInfo?.votesRecord == nil {
+                votesLabel.text = nil
+            }
+        }
+        if userInfo?.rankRecord == nil{
+            recordLabel.text = nil
+            
+        }
         // Do any additional setup after loading the view.
         
         // デバッグデータ
-    
+        
+        
     }
     
     override func didReceiveMemoryWarning() {
@@ -61,8 +79,6 @@ class HomeViewController: UIViewController,UIImagePickerControllerDelegate{
         picker.dismiss(animated: true, completion: nil)
     }
     
-    @IBAction func premiumButton(_ sender: Any) {
-    }
     
     @IBAction func unwind(_ segue: UIStoryboardSegue) {
     }

@@ -16,6 +16,13 @@ class AllTableViewCell: UITableViewCell {
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var bokeLabel: UILabel!
     @IBOutlet weak var votesLabel: UILabel!
+    var votes:[String] = [""]
+    var userInfo: UserInfo?
+    var bokeData: BokeData?
+    var number: Int?
+    
+    var odaiBox: odaiBox?
+
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -28,10 +35,12 @@ class AllTableViewCell: UITableViewCell {
     }
     func setBokeData(bokeData: BokeData){
         //imageViewとnumberは後回し
+        
         self.bokeLabel.text="\(bokeData.boke!)"
         self.nameLabel.text="\(bokeData.name!)"
         let likeNumber = bokeData.likes.count
         votesLabel.text = "\(likeNumber)"
+        self.numberLabel.text = "\(number)"
     }
 
     
